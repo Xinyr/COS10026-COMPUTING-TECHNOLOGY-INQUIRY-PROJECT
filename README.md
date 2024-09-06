@@ -6,4 +6,4 @@ Please create a branch with your name by clicking the branch icon at the top.
 
 When we complete an assigment, we will consolidate all the files into the main branch
 
-Contact me if you have other suggestions on standardizing our formatting.
+Contact me if you have other suggestions on standardizing our formatting, or if you need help in using Github.
