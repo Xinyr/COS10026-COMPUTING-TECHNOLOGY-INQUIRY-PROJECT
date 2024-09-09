@@ -6,55 +6,19 @@
         <meta name="keywords" content="Herbarium" />
         <meta name="authors" content="Frederick Bartholomew Sii Dao Xiang" />
         <title>Herbarium</title>
-        <style>
-            body, html{
-                overflow: auto;
-                margin: 0;
-                font-family: Arial, Helvetica, sans-serif;
-            }
-            /* https://dev.to/ljcdev/hamburger-css-no-js-2dfa this is a burger menu alternative? */
-            /* the following css is derived from https://www.w3schools.com/howto/howto_css_fixed_menu.asp */
-            .navbar {
-                z-index: 3;
-                overflow: hidden;
-                background-color: #336600;
-                position: fixed;
-                top: 0;
-                width: 100%;
-            }
-            .navbar a {
-                float: left;
-                display: block;
-                color: #d9ffb3;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-            .navbar a:hover{
-                background-color: #ddd;
-                color: black;
-            }
-            .blur-container{
-                overflow: hidden;
-            }
-            .blur-image{
-                background-image: "placeholder.jpg";
-                filter: blur(8px);
-                -webkit-filter: blur(8px); /* for compatibility with older browsers */
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div class="navbar">
-            <a href="#tutorial">Tutorial</a>
-            <a href="#enquiry">Enquiry</a>
-            <a href="#identify">Identify</a>
-            <a href="#contribute">Contribute</a>
-            <a href="#about">About us</a>
-            <a href="#login">Login/ Sign up</a>
+            <ul>
+                <li><a href="#tutorial">Tutorial</a></li>
+                <li><a href="#enquiry">Enquiry</a></li>
+                <li><a href="#identify">Identify</a></li>
+                <li><a href="#contribute">Contribute</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#login">Login/ Sign up</a></li>
+            </ul>
+
         </div>
         <iframe scrolling="no" src="backgroundimage.html" style="z-index:1; width:100%; height:100vh; border:none; margin:0px; padding:0px;overflow:hidden;"></iframe>
         <!-- iframes are used here to help mitigate the blurry edges of a blurred image -->
