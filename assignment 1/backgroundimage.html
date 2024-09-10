@@ -2,8 +2,11 @@
 <html>
     <head>
         <style>
+            body{
+                background-color: #1a3300;
+            }
             .bg-text {
-                color: black;
+                color: white;
                 font-weight: bold;
                 position: absolute;
                 top: 50%;
@@ -16,7 +19,8 @@
             }
             .bg-image{
                 height: 100vh;
-                background-image: url("placeholder.jpg");
+                /* background image from :https://pixabay.com/de/photos/die-dschungel-von-chiapas-1865639/ */
+                background-image: url("overview main.jpg"); 
                 filter: blur(8px);
                 -webkit-filter: blur(8px); /* for compatibility with older browsers */
                 background-position: center;
@@ -28,7 +32,7 @@
     <body>
         <div class="bg-image"></div>
         <div class="bg-text">
-            <h2>Lorem Ipsum</h2>
+            <h2>Herbarium</h2>
         </div>
     </body>
 </html>
