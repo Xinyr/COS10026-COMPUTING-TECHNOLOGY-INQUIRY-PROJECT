@@ -29,8 +29,8 @@ ul {
   border-radius: 5px;
 }
 .navbar a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #1a3300;
+  color: white;
 }
 .blur-container {
   overflow: hidden;
