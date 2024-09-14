@@ -4,16 +4,8 @@ html {
 	margin: 0;
 	font-family: Arial, Helvetica, sans-serif;
 }
-
-/* https://dev.to/ljcdev/hamburger-css-no-js-2dfa this is a burger menu alternative? */
-/* the following css is derived from https://www.w3schools.com/howto/howto_css_fixed_menu.asp */
-.navbar {
-	z-index: 3;
-	overflow: hidden;
-	background-color: #336600;
-	position: fixed;
-	top: 0;
-	width: 100%;
+p {
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 ul {
@@ -32,6 +24,17 @@ ul.right-bar {
 	list-style-type: none;
 	float: right;
 	top: 0;
+}
+
+/* https://dev.to/ljcdev/hamburger-css-no-js-2dfa this is a burger menu alternative? */
+/* the following css is derived from https://www.w3schools.com/howto/howto_css_fixed_menu.asp */
+.navbar {
+	z-index: 3;
+	overflow: hidden;
+	background-color: #336600;
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
 
 .navbar a {
@@ -70,4 +73,20 @@ iframe {
 	padding: 0px;
 	overflow: hidden;
   overflow-y: hidden;
+}
+
+div.overview-grid-top{
+  display:grid;
+  background-color:gray;
+  grid-template-columns: 33% 66%;
+}
+
+div.overview-grid-bottom{
+  display:grid;
+  background-color:gray;
+  grid-template-columns: 66% 33%;
+}
+
+div.overview-content{
+  text-align: center;
 }
