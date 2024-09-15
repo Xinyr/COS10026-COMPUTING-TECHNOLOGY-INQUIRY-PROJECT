@@ -90,3 +90,104 @@ div.overview-grid-bottom{
 div.overview-content{
   text-align: center;
 }
+
+.about_me_hub {
+	position: absolute;
+	top: 100px;
+}
+
+.about_me {
+	position:absolute;
+	top: 10vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.about_me > div {
+	color: #000000;
+}
+
+.about_me > section {
+	color: #000000;
+	background-color: aliceblue;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.about_me > img {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	border-style: groove;
+	padding: 20px;
+}
+
+.about_me_name {
+	font-size: 200%;
+}
+
+.mail_me_button {
+	background-color: #04AA6D;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+.mail_me_button:hover {
+	background-color: #1a3300;
+	color: white;
+}
+
+.fred_page {
+	background-color: peachpuff;
+	line-height: 1.5;
+}
+
+.fred_page_list {
+	width: 90%;
+	overflow: visible;
+	display: block;
+	padding-left: 20px;
+	list-style-type: circle;
+}
+.fred_page section {
+	line-height: 1;
+}
+
+.fred_table{
+	width: 40%;
+	border-collapse: separate;
+	border-spacing: 5px 5px;
+}
+
+.fred_page caption{
+	font-size: large;
+}
+
+.fred_table th {
+	padding: 5px;
+	background-color: pink;
+	color: #000000;
+	border-radius: 5px;
+}
+
+.fred_table td {
+	padding: 5px;
+	background-color: #fff;
+	color: #000000;
+	border-radius: 5px;
+}
+
+.fred_table a:link {
+	color: #5d5d3c;
+}
+
