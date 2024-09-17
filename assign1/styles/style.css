@@ -90,6 +90,7 @@ div.overview-grid-bottom{
 div.overview-content{
   text-align: center;
 }
+
 .containerFaridz {
 	width: 75%;
 	margin: auto;
@@ -130,4 +131,9 @@ th {
 }
 td {
 	background-color: #fff;
+}
+
+.about_me_hub {
+	position: absolute;
+	top: 100px;
 }
