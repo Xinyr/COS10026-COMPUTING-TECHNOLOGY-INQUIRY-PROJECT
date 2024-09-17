@@ -90,3 +90,44 @@ div.overview-grid-bottom{
 div.overview-content{
   text-align: center;
 }
+.containerFaridz {
+	width: 75%;
+	margin: auto;
+	overflow: hidden;
+}
+.button_containerFaridz {
+	text-align: center;
+}   
+.mailto_buttonFaridz {
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 16px;
+	color: #ea50c6;
+	background-color: #ae298f;
+	border: #fff;
+	border-radius: 4px;
+	cursor: pointer;
+
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 20px 0;
+	background: #fff;
+	border-radius: 8px;
+}
+th, td {
+	padding: 12px;
+	text-align: left;
+	border-bottom: 1px solid #777676;
+	border-left: 1px solid #777676; 
+	border-right: 1px solid #777676;
+	border-top: 1px solid #555353;
+}
+th {
+	background-color: #d4d197;
+	color: #333;
+}
+td {
+	background-color: #fff;
+}
