@@ -121,7 +121,7 @@ div.overview-content{
 	height: 200px;
 	width: 200px;
 	border-radius: 50%;
-	border-style: groove;
+	border: 5px groove;
 	padding: 20px;
 }
 
@@ -129,7 +129,7 @@ div.overview-content{
 	font-size: 200%;
 }
 
-/* Fred's CSS for his profile page */
+/* profile page */
 
 .mail_me_button {
 	background-color: #04AA6D;
@@ -150,211 +150,66 @@ div.overview-content{
 	color: white;
 }
 
-
-.fred_page {
-	background-color: peachpuff;
-	line-height: 1.5;
+.profile_page {
+	line-height: 1;
+	background-color: lightgray;
 }
 
-.fred_page_list {
+.profile_page_list {
 	width: 90%;
 	overflow: visible;
 	display: block;
 	padding-left: 20px;
 	list-style-type: circle;
 }
-.fred_page section {
+
+.profile_page section {
 	line-height: 1;
 }
 
-.fred_table{
+.profile_table{
 	width: 40%;
 	border-collapse: separate;
 	border-spacing: 5px 5px;
 	background-color: transparent;
+	line-height: 1.5;
 }
 
-.fred_page caption{
+.profile_page caption{
 	font-size: large;
 }
 
-.fred_table th {
+.profile_table th {
 	padding: 5px;
+	color: #000000;
+	border-radius: 5px;
+	background-color: #c2c2d6;
+}
+
+.profile_table td {
+	padding: 5px;
+	color: #000000;
+	border-radius: 5px;
+	background-color: #c2c2d6;
+}
+
+/* Fred's profile section */
+.profile_page.fred {
+	background-color: peachpuff;
+}
+
+.profile_page_list.fred {
+	color: #4d3319;
+}
+
+.profile_page.fred section {
+	background-color: #c2c2d6;
+}
+
+.profile_table.fred th {
 	background-color: pink;
-	color: #000000;
-	border-radius: 5px;
 }
 
-.fred_table td {
-	padding: 5px;
-	background-color: #fff;
-	color: #000000;
-	border-radius: 5px;
-}
-
-.fred_table a:link {
-	color: #5d5d3c;
-}
-
-/* Faridz's css for his profile page */
-
-.containerFaridz {
-	width: 75%;
-	margin: auto;
-	overflow: hidden;
-}
-.button_containerFaridz {
-	text-align: center;
-}   
-.mailto_buttonFaridz {
-	display: inline-block;
-	padding: 10px 20px;
-	font-size: 16px;
-	color: #ea50c6;
-	background-color: #ae298f;
-	border: #fff;
-	border-radius: 4px;
-	cursor: pointer;
-
-}
-table {
-	width: 100%;
-	border-collapse: collapse;
-	margin: 20px 0;
-	background: #fff;
-	border-radius: 8px;
-}
-th, td {
-	padding: 12px;
-	text-align: left;
-	border-bottom: 1px solid #777676;
-	border-left: 1px solid #777676; 
-	border-right: 1px solid #777676;
-	border-top: 1px solid #555353;
-}
-th {
-	background-color: #d4d197;
-	color: #333;
-}
-td {
-	background-color: #fff;
-}
-
-
-/* Kelvin's css for his profile page */
-
-h1 {
-    font-size: large;
-    font-weight: bold;
-    text-align: center;
-}
-
-.student-ID {
-    font-family: Arial, sans-serif;
-    font-size: 1.2em;
-}
-
-.course {
-    color: rgb(red, green, blue);
-}
-
-.profile-pic {
-    float:none;
-    border: groove;
-    padding: 20px;
-    max-width: 150px;
-    height:auto;
-}
-
-.information-table {
-    margin: 20px auto;
-    width: 80%;
-    border-collapse: collapse;
-}
-
-.information-table th, .information-table td {
-    padding: 15px;
-    border: 1px solid #ccc;
-}
-
-.information-table th {
-    font-weight: bold;
-    background-color: #e0e0e0;
-    text-align: center;
-}
-
-.information-table td {
-    background-color: #f9f9f9;
-}
-
-/* Kai Seng's css for his profile page */
-
-.kai-seng-background {
-	background-color:lightblue;
-    background-repeat: repeat-x;
-	}
-
-header img{
-    width: 250px;
-    height: 250px;
-	object-fit: cover;
-    border-radius: 50%;
-    margin-right: 20px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-    border: 5px groove #000; /* Groove border with a black color */
-}
-article h1{
-	font-size:200%
-	
-}
-article h1,
-article h2,
-article h3 {
-    font-family: Arial, sans-serif;
-    color: #4C3720;
-	text-align:center;
-	}
-
-article h1 {
-    font-size: 24px;
-}
-
-article h2 {
-    font-size: 20px;
-}
-
-.member {
-	font-size:20px;
-	line-height: 2.0;
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: justify;
-	
-}
-
-.container {
-    max-width: 800px;
-    margin: 50px auto;
-    text-align: center;
-}
-
-.email-button {
-    display: inline-block;
-    padding: 15px 30px;
-    font-size: 1.2em;
-    color: white;
-    background-color: #4CAF50;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.email-button:hover {
-    background-color: #45a049;
+.profile_table.fred td{
+	background-color: cornsilk;
 }
