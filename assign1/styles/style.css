@@ -279,9 +279,16 @@ div.overview-content{
 	background-color: cornsilk;
 }
 
-/* name */ 
-.profile_table.name td{
-	background-color: cornsilk;
+/* Faridz page */ 
+.profile_table.faridz th{
+	background-color: #465df0;
+	
+}
+.profile_table.faridz td{
+	background-color: #46d6f0;
+}
+.profile_page.faridz{
+	background-color: rgb(232, 205, 205);
 }
 
 /* Login/Registration Page */
