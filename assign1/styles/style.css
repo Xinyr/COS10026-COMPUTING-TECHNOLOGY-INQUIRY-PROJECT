@@ -229,6 +229,7 @@ div.overview-content{
 }
 
 .profile_page section {
+	padding: 0.1% 3%;
 	line-height: 1;
 	font-size: 1.5em;
 }
@@ -291,6 +292,29 @@ div.overview-content{
 .profile_page.faridz{
 	background-color: rgb(232, 205, 205);
 }
+
+/* Kelvin's profile section*/ 
+
+.profile_page.kelvin{
+	background-color: #336600;
+}
+
+.profile_page_list.kelvin {
+	background: #d9ffb3;
+}
+
+.profile_page.kelvin section{
+	background-color: #04AA6D;
+}
+
+.profile_page.kelvin th{
+	background-color: #0ed68d;
+}
+
+.profile_table.kelvin td{
+	background-color: rgb(7, 151, 19);
+}
+
 
 /* Login/Registration Page */
 .logincontainer{
