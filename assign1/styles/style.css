@@ -283,3 +283,22 @@ div.overview-content{
 .profile_table.name td{
 	background-color: cornsilk;
 }
+
+/* Login/Registration Page */
+.logincontainer{
+	padding-left: 30%;
+	padding-right: 30%;
+	display: flexbox;
+}
+.logininput{
+	display: flexbox;
+	font-size: 16px;
+	border-style: groove;
+	width: 80%;
+	border-radius: 5px;
+}
+.boxlogin{
+	text-align: center;
+	align-self: center;
+	border-radius: 15px;
+}
