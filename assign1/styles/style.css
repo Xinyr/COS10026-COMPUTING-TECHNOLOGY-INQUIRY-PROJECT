@@ -133,20 +133,57 @@ iframe {
   overflow-y: hidden;
 }
 
-div.overview-grid-top{
-  display:grid;
-  background-color:gray;
-  grid-template-columns: 33% 66%;
+/* index background image */
+.index{
+	background-color: #1a3300;
+	overflow: hidden;
+	margin: 0;
 }
 
-div.overview-grid-bottom{
-  display:grid;
-  background-color:gray;
-  grid-template-columns: 66% 33%;
+.bg-title {
+	color: white;
+	font-weight: bold;
+	position: absolute;
+	top: 50%;
+	left: 75%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	width: 80%;
+	padding: 20px;
+	text-align: center;
+	overflow:hidden;
+	font-size: 3em;
 }
 
-div.overview-content{
-  text-align: center;
+.bg-body{
+	display: flex;
+	flex-direction: column;
+	color: white;
+	font-weight: bold;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-90%, -50%);
+	z-index: 2;
+	padding: 20px;
+	text-align: center;
+	overflow:hidden;
+	font-size: 2em;
+	width: 50vw;
+	background-color: hsla(90, 100%, 20%, 0.397);
+	border-radius: 50px;
+}
+
+.bg-image{
+	height: 100vh;
+	/* background image from :https://pixabay.com/de/photos/die-dschungel-von-chiapas-1865639/ */
+	background-image: url("../images/overview_main.jpg"); 
+	filter: blur(1vh);
+	-webkit-filter: blur(1vh); /* for compatibility with older browsers */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow:hidden;
 }
 
 
