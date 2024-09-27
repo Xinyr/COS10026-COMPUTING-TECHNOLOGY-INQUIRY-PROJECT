@@ -352,17 +352,19 @@ iframe {
 	background-color: rgb(7, 151, 19);
 }
 
-.about_me_name_kaiseng {
+
+/* profile page Kaiseng */
+
+.about_me_name.kaiseng {
 	font-size: 200%;
 }
 
-/* profile page Kaiseng */
-.profile_page_kaiseng {
+.profile_page.kaiseng {
 	
 	background-color: lightblue ;
 }
  
-.profile_page_list_kaiseng {
+.profile_page_list.kaiseng {
 	width: 90%;
 	overflow: visible;
 	display: block;
@@ -370,11 +372,11 @@ iframe {
 	list-style-type: circle;
 }
 
-.profile_page_kaiseng section {
+.profile_page.kaiseng section {
 	line-height: 1;
 }
 
-.profile_table_kaiseng{
+.profile_table.kaiseng{
 	width: 40%;
 	border-collapse: separate;
 	border-spacing: 5px 5px;
@@ -382,25 +384,25 @@ iframe {
 	line-height: 1.5;
 }
 
-.profile_page_kaiseng caption{
+.profile_page.kaiseng caption{
 	font-size: large;
 }
 
-.profile_table_kaiseng th {
+.profile_table.kaiseng th {
 	padding: 5px;
 	color: #000000;
 	border-radius: 5px;
 	background-color: pink;
 }
 
-.profile_table_kaiseng td {
+.profile_table.kaiseng td {
 	padding: 5px;
 	color: #000000;
 	border-radius: 5px;
 	background-color: #c2c2d6;
 }
 
-.mail_me_button_kaiseng {
+.mail_me_button.kaiseng {
     display: inline-block;
     padding: 15px 30px;
     font-size: 1.2em;
@@ -411,7 +413,7 @@ iframe {
     transition: background-color 0.3s ease;
 }
 
-.mail_me_button_kaiseng:hover {
+.mail_me_button.kaiseng:hover {
     background-color: #45a049;
 }
 
