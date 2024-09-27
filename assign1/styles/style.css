@@ -82,6 +82,7 @@ footer {
 }
 
 .navbar a {
+	margin-left: 5px;
 	display: block;
 	color: #d9ffb3;
 	padding: 14px 16px;
