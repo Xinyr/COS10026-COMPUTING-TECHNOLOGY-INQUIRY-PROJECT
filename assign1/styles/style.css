@@ -82,6 +82,7 @@ footer {
 }
 
 .navbar a {
+	margin-left: 5px;
 	display: block;
 	color: #d9ffb3;
 	padding: 14px 16px;
@@ -415,6 +416,12 @@ iframe {
 
 .mail_me_button.kaiseng:hover {
     background-color: #45a049;
+}
+
+/* profile page cheng */
+.profile_table.cheng td{
+	background-color: #3ce0d0;
+	color: white;
 }
 
 /* Login/Registration Page */
