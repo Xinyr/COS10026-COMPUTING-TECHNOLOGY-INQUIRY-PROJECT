@@ -622,6 +622,7 @@ iframe {
 }
 
 .classification_body {
+	font-size: 1em;
 	background-color: #b4b4b4;
 }
 
@@ -638,6 +639,8 @@ iframe {
 }
 
 .classification aside{
+	font-size: 0.8em;
+	font-style: italic;
 	align-self:flex-end;
 }
 
