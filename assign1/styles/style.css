@@ -48,7 +48,7 @@ footer {
 	margin-left: 20px;
 }
 
-.acknowledgements {
+.footer_container > .acknowledgements {
 	display:flex;
 	flex-direction: column;
 	justify-content: center;
@@ -462,7 +462,7 @@ iframe {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('images/plant.jpeg');
+    background-image: url('../images/plant.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
@@ -602,37 +602,48 @@ iframe {
             text-decoration: underline;
         }
 
-        /* Footer styling */
-        
-		footer {
-	background-color: #336600;
+/* plants classification */
+
+.classification_header {
+    display: flex;
+    position: relative;
+    margin-top: 10vh;
+    justify-content: center;
+	font-weight: bold;
+	font-size: 3em;
 }
 
-.footer_container {
-	width: 100%;
-	color: #d9ffb3;
-	padding: 50px 0 20px;
-	margin-left: 20px;
+.classification_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	margin-bottom: 2vh;
 }
 
-.acknowledgements {
-	display:flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+.classification {
+	padding: 10px;
+	width: 60%;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	border: 2px solid #000;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.acknowledgements a{
-	padding-top: 5px;
-	text-decoration: none;
-	color:#d9ffb3;
-	transition: color 0.3s ease;
+.classification aside{
+	align-self:flex-end;
 }
 
-.acknowledgements a:hover{
-	color:#1a3300;
+.classification figure{
+	padding: 10px;
+	width:inherit;
+	border: 1px solid #000;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.acknowledgements h3{
-	text-decoration: underline;
+.classification img {
+	width:100%;
 }
