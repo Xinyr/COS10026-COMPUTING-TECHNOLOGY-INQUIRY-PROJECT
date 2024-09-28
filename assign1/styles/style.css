@@ -48,7 +48,7 @@ footer {
 	margin-left: 20px;
 }
 
-.acknowledgements {
+.footer_container > .acknowledgements {
 	display:flex;
 	flex-direction: column;
 	justify-content: center;
@@ -441,4 +441,209 @@ iframe {
 	text-align: center;
 	align-self: center;
 	border-radius: 15px;
+}
+
+/* identify page */
+
+.identify body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    position: relative;
+}
+
+ .identifypage_kaiseng body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/plant.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    opacity: 1; /* Adjust this value to set the desired opacity */
+    z-index: -1; /* Make sure the image stays behind the content */
+}
+ 
+
+    /* Container for page content */
+.identify_container {
+    max-width: 1300px;
+    margin: 0 auto;
+    border: 8px solid green; /* Green border */
+    padding: 20px; /* Space inside the box */
+    border-radius: 20px; /* Rounded corners */
+    margin-top: 20px; /* Space above the container */
+    font-size: 20px; /* Increase font size */
+    background-color: white; /* Solid background color for the div */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for a lifted effect */
+    z-index: 1; /* Place above the background */
+    position: relative; /* Keep the div content on top of the background */
+}
+
+
+        /* Header styling */
+       .identify header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+			z-index: 1; /* Place above the background */
+			margin-top: 50px; /* Move the header down by adding top margin */			
+        }
+
+        /* Main title styling */
+       .identify header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+        }
+		
+		.identify header p {
+		font-size: 1.3rem; /* Increase the font size as needed */
+		margin-top: 10px;
+		}
+
+        /* Section and subsection headings */
+       .identify   h2 {
+            color: #4CAF50;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+
+       .identify  h3 {
+            color: #333;
+            margin-top: 20px;
+        }
+
+        /* Styling for paragraphs */
+         .identify_container p {
+            font-size: 1.3rem;
+            margin: 15px 0;
+        }
+
+        /* Style for the figure element */
+        .identify  figure {
+            margin: 30px 0;
+            text-align: center;
+            transition: transform 0.2s ease; /* Smooth transition */
+        }
+
+        /* Image styling */
+        .identify  figure img {
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            width: 50%;
+            max-width: 600px;
+            transition: transform 0.3s ease; /* Smooth transition */
+        }
+
+        /* Hover effect for figure */
+         .identify_container figure:hover img{
+            transform: scale(1.5); /* Zoom in the image */
+        }
+
+        /* Styling for figure captions */
+         .identify_container figcaption{
+            font-style: italic;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        /* Ordered list styling */
+        .identify_container ol {
+            margin-left: 20px;
+        }
+
+        /* Definition list styling */
+         .identify_container dl {
+            background-color: #fff;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .identify_container dl dt {
+            font-weight: bold;
+            margin-top: 10px;
+            color: #4CAF50;
+        }
+
+         .identify_container dl dd {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Styling for the aside element */
+         .identify_container aside {
+            background-color: #e7f3e7;
+            padding: 20px;
+            margin: 40px 0;
+            border-left: 5px solid #4CAF50;
+        }
+
+         .identify_container aside h3 {
+            margin-top: 0;
+        }
+
+        /* Styling for links */
+         .identify_container a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+         .identify_container a:hover {
+            text-decoration: underline;
+        }
+
+/* plants classification */
+
+.classification_header {
+    display: flex;
+    position: relative;
+    margin-top: 10vh;
+    justify-content: center;
+	font-weight: bold;
+	font-size: 3em;
+}
+
+.classification_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	margin-bottom: 2vh;
+}
+
+.classification {
+	padding: 10px;
+	width: 60%;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	border: 2px solid #000;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.classification aside{
+	align-self:flex-end;
+}
+
+.classification figure{
+	padding: 10px;
+	width:inherit;
+	border: 1px solid #000;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.classification img {
+	width:100%;
 }
