@@ -607,10 +607,9 @@ iframe {
 .classification_header {
     display: flex;
     position: relative;
-    margin-top: 10vh;
     justify-content: center;
 	font-weight: bold;
-	font-size: 3em;
+	font-size: 1.5em;
 }
 
 .classification_container {
@@ -641,7 +640,7 @@ iframe {
 .classification aside{
 	font-size: 0.8em;
 	font-style: italic;
-	align-self:flex-end;
+	align-self: center;
 }
 
 .classification figure{
@@ -654,4 +653,9 @@ iframe {
 
 .classification img {
 	width:100%;
+}
+
+.classification dt::before {
+	content: "> ";
+	list-style-type: armenian;
 }
