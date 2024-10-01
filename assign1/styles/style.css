@@ -191,11 +191,79 @@ iframe {
 /* about me hub */
 
 .about_me_hub {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
     position: relative;
     margin-top: 10vh;
     margin-bottom: 10vh;
 }
 
+.flip_card_container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 60%;
+	border: 1px solid black;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding: 20px 10px;
+}
+
+.flip_card {	/* following code from w3schools */
+	background-color: transparent;
+	width: 300px;
+	height: 300px;
+	perspective: 1000px;
+	margin: 30px 10px;
+}
+
+.flip_card_inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	border-radius: 10px;
+}
+
+.flip_card:hover .flip_card_inner {
+	transform: rotateY(180deg);
+}
+
+.flip_card_front, .flip_card_back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.flip_card_front {
+	background-color: #bbb;
+	color: black;
+	border-radius: 10px;
+}
+
+.flip_card_back {
+	background-color: #4CAF50;
+	color: black;
+	transform: rotateY(180deg);
+	border-radius: 10px;
+}	/* end of code from w3 schools */
+
+.flip_profile_img{
+	width: inherit;
+	height: inherit;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+.flip_card_back a{
+	color: white;
+}
 
 .about_me {
 	position: relative;
@@ -213,6 +281,7 @@ iframe {
 }
 
 .about_me > section {
+	margin-top: 10px;
 	color: #000000;
 	background-color: aliceblue;
 	border-radius: 5px;
