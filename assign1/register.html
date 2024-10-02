@@ -7,17 +7,17 @@
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <meta name="author" content="Mohamad Faridz Faisal Bin Mohamad Isham" />
     <title>Herbarium Registration</title>
-    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/style1.css" />
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body style="background-color: #a8da76;">
     <div class="navbar">
         <ul>
-            <li><a href="./index.html" class="logo_img"><img src="./images/logo.jpg" alt="home page logo"></a></li>
-            <li><a href="./plants_classification.html">Plants Classification</a></li>
+            <li><a href="./index.html" class="logo_img"><img src="./images/logo.jpg"></a></li>
+            <li><a href="#classification">Plants Classification</a></li>
             <li><a href="#tutorial">Tutorial</a></li>
             <li><a href="#enquiry">Enquiry</a></li>
-            <li><a href="./identify_page.html">Identify</a></li>
+            <li><a href="#identify">Identify</a></li>
             <li><a href="#contribute">Contribute</a></li>
         </ul>
         <div>
@@ -27,34 +27,46 @@
             </ul>
         </div>
     </div>
-    <div class="logincontainer">
-        <div class="button_containerFaridz" >
-    
-        <h1 class="boxlogin" style="font-size: 4em; margin-top: 100px; background-color: rgba(113, 45, 5, 0.993);">Registration</h1>
+    <div style="margin-top: 50px;" class="boxlogin">
+        <div class="logincontainer">
+            <h1 style="font-size: 400%;">Registration </h1>
         </div>
-        <div>
+    </div>
+    <div style="padding: 5%;">
+        <div class="logincontainer">
+            <div class="loginform">
             <form method="post" action="mailto:104396635@students.swinburne.edu.my">
-                <div class="boxlogin" style="background-color: #adf88b; color: #000; font-size: 24px; border-style: groove; border-color: #000; padding: 10px;">
-                    <h1 style="font-size: 1.5em;">Register an account</h1>
-                    <input class="logininput" type="email" name="email" required="required" placeholder="Email: example@example"> <br><br>
-                    <input class="logininput" type="text" name="username" id="username" required="required" placeholder="Username: example1234@#$"> <br> <br>
-                    <input class="logininput" type="text" name="password" id="password" required="required" placeholder="Password: Refer below"> <br>
+                    <h1 style="font-size: 1.5em; padding: 10px; padding-top: 30px; text-align: center;">Register here</h1>
+                    <label for="username">Username:</label>
+                    <input class="logininput" type="text" name="username" id="username" required="required" placeholder="Username:"> <br> <br>
+                    <label for="email">Email:</label>
+                    <input class="logininput" type="text" name="email" id="email" required="required" placeholder="Example@example.example"> <br><br>
+                    <label for="password">Password:</label>
+                    <input class="logininput" type="text" name="password" id="password" required="required" placeholder="Password:">
+                    <br>
+                    <div style=" opacity: 40%;">
+                    <p> Password must have:
+                        <ol style="margin-left: 20px;">
+                        
+                        <li>
+                            Must have 1 uppercase character
+                        </li>
+                        <li>
+                            Must have 1 lowercase character 
+                        </li>
+                        <li>
+                            Must have 1 special character 
+                        </li>
                     
-                    <div style="padding-left: 10px;">
-                        <div style="text-align: left; opacity: 55%; font-size: 0.65em;">
-                        <p>Password: <br> 
-                        </p>
-                        <ul>
-                        <li >Must have 1 uppercase character</li>
-                        <li>Must have 1 lowercase character</li>
-                        <li>Must have 1 special character</li>
-                        </ul>
-                        </div> 
-                    </div> <br>
+                        </ol>
+                    </p>    
+                </div>
+                    <div style="padding-top: 40px;">
                     <button class="boxlogin" style="font-size: 24px;" type="submit">Register</button>
-                </div> <br>
-            </form>
-        </div>
+                    </div><br>
+                </form>
+            </div>
+        </div> 
     </div>
 <footer>
     <div class="footer_container">
@@ -71,8 +83,5 @@
                 Malaysia
             </address>
         </div>
-    </div>
 </footer>
-
 </body>
-</html>

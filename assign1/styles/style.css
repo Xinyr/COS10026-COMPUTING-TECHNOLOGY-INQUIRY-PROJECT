@@ -505,9 +505,19 @@ iframe {
 }
 
 /* Login/Registration Page */
+.loginform{
+    flex: 1;
+    background-color: #f4f9f4;
+    border: 2px solid #a3c4a8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);	
+    overflow-y: auto;
+    box-sizing: border-box;
+}
 .logincontainer{
-	padding-left: 30%;
-	padding-right: 30%;
+	padding-left: 20%;
+	padding-right: 20%;
 	display: flexbox;
 }
 .logininput{
