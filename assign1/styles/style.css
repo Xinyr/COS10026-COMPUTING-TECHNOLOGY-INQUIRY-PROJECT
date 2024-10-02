@@ -791,3 +791,106 @@ iframe {
 	content: "> ";
 	list-style-type: armenian;
 }
+
+/* Enquiry-section */
+.body_enquiry {
+    background-color: #e8f0e8;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+/* Styling the container to split the page into two halves */
+.enquiry_image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+/* Left side image section */
+.enquiry_image-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.enquiry-image {
+    width: 100%;
+    height: auto;
+    max-height: 652.838px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Right side form section */
+.enquiry_form-section {
+    flex: 1;
+    background-color: #f4f9f4;
+    border: 2px solid #a3c4a8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 652.838px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.enquiry_h2 {
+    text-align: center;
+    color: #4c774c;
+    font-family: 'Georgia', serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form_equiry {
+    margin: 0 auto;
+}
+
+.fieldset_enquiry {
+    margin-bottom: 20px;
+    border: 1px solid #a3c4a8;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.label_enquiry {
+    display: block;
+    font-weight: bold;
+    color: #2f4f4f;
+    margin-bottom: 8px;
+}
+
+.input_enquiry,
+.select_enquiry {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #b7d2b5;
+    border-radius: 4px;
+    background-color: #eef7ee;
+    font-size: 14px;
+}
+
+.button_enquiry {
+    width: 100%;
+    padding: 12px;
+    background-color: #6b8f71;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: auto;
+}
+
+.button_enquiry:hover {
+    background-color: #5e7d64;
+}
