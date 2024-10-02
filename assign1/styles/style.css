@@ -131,7 +131,8 @@ iframe {
 	margin: 0px;
 	padding: 0px;
 	overflow: hidden;
-  overflow-y: hidden;
+  	overflow-y: hidden;
+	margin-top: 50px;
 }
 
 /* index background image */
