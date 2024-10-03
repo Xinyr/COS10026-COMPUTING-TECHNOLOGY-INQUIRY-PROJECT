@@ -683,5 +683,146 @@ iframe {
         justify-content: center;
         gap: 10px; /* space between images */
 		}
-		
+
+
+/* Reset some default browser styles */
+*.care_page {
+    margin:0 auto;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* Base Typography */
+.care_page body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color:lightblue;
+    padding: 20px;
+}
+
+/* Container for the main content */
+.care_page article{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+.care_page header {
+    text-align: center;
+    margin-top: 70px; /* Move the header down by adding top margin */
+}
+
+.care_page header h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+}
+
+/* Section Styling */
+.care_page section {
+    margin-bottom: 30px;
+}
+
+.care_page section h2 {
+    font-size: 1.8em;
+    color: #34495e;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 5px;
+}
+
+.care_page section p {
+    margin-bottom: 15px;
+    font-size: 1em;
+    color: #555;
+}
+
+/* Figure and Image Styling */
+.care_page figure p, figcaption {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.care_page figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.care_page figcaption {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 5px;
+}
+
+/* Ordered and Unordered Lists */
+.care_page ol, ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.care_page ol li, ul li {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+/* Definition List */
+.care_page dl {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.care_page dt {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #2c3e50;
+}
+
+.care_page dd {
+    margin-left: 20px;
+    color: #555;
+}
+
+/* Aside Styling */
+.care_page aside {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-left: 4px solid #3498db;
+    margin-bottom: 30px;
+}
+
+.care_page aside h3 {
+    font-size: 1.3em;
+    color: #2980b9;
+    margin-bottom: 10px;
+}
+
+.care_page aside p {
+    font-size: 0.95em;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .care_page body {
+        padding: 10px;
+    }
+
+  .care_page header h1 {
+        font-size: 2em;
+    }
+
+  .care_page section h2 {
+        font-size: 1.5em;
+    }
+
+   .care_page aside h3 {
+        font-size: 1.1em;
+    }
+
+}
+
   
