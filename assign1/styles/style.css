@@ -655,3 +655,193 @@ iframe {
 .classification img {
 	width:100%;
 }
+
+
+/*identify page*/
+
+.identify body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    position: relative;
+}
+
+ .identifypage_kaiseng body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/plant.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    opacity: 1; /* Adjust this value to set the desired opacity */
+    z-index: -1; /* Make sure the image stays behind the content */
+}
+ 
+
+    /* Container for page content */
+.identify_container {
+    max-width: 1300px;
+    margin: 0 auto;
+    border: 8px solid green; /* Green border */
+    padding: 20px; /* Space inside the box */
+    border-radius: 20px; /* Rounded corners */
+    margin-top: 20px; /* Space above the container */
+    font-size: 20px; /* Increase font size */
+    background-color: white; /* Solid background color for the div */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for a lifted effect */
+    z-index: 1; /* Place above the background */
+    position: relative; /* Keep the div content on top of the background */
+}
+
+/* Header styling */
+ .identify header {
+	 background-color: #4CAF50;
+         color: white;
+         padding: 30px 0;
+         text-align: center;
+	 z-index: 1; /* Place above the background */
+	 margin-top: 50px; /* Move the header down by adding top margin */			
+        }
+
+/* Main title styling */
+ .identify header h1 {
+	 font-size: 3.5rem;
+	 margin: 0;
+        }
+		
+ .identify header p {
+	font-size: 1.3rem; /* Increase the font size as needed */
+	margin-top: 10px;
+	}
+
+/* Section and subsection headings */
+      
+.identify  h2 {
+	 color: #333;
+         margin-top: 20px;
+        }
+
+        /* Style for the figure element */
+.identify  figure {
+        margin: 30px 0;
+        text-align: center;
+ 	transition: transform 0.2s ease; /* Smooth transition */
+        }
+
+        /* Image styling */
+ .identify  figure img {
+        border: 2px solid #ddd;
+        border-radius: 5px;
+        width: 50%;
+        max-width: 600px;
+	 transition: transform 0.3s ease; /* Smooth transition */
+        }
+
+        /* Hover effect for figure */
+         .identify_container figure:hover img{
+            transform: scale(1.5); /* Zoom in the image */
+        }
+
+        /* Styling for figure captions */
+         .identify_container figcaption{
+            font-style: italic;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        /* Styling for links */
+         .identify_container a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+         .identify_container a:hover {
+            text-decoration: underline;
+        }
+		
+		/*image upload styling*/
+		.upload_img {
+			max-width: 1300px;
+			margin: 0 auto;
+			border: 8px solid green; /* Green border */
+			padding: 20px; /* Space inside the box */
+			border-radius: 20px; /* Rounded corners */
+			margin-top: 20px; /* Space above the container */
+			font-size: 20px; /* Increase font size */
+			background-color: white; /* Solid background color for the div */
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for a lifted effect */
+			z-index: 1; /* Place above the background */
+			position: relative; /* Keep the div content on top of the background */
+				}
+				
+         .identify h3, h4{
+            text-align: center;
+            color: #4CAF50;
+			font-size: 2.5rem;
+        }
+		
+		.identify h5 {
+			text-align: center;
+			font-size: 2.0rem;
+		}
+		
+		.plant-info p {
+			font-size:25px;
+		}
+		
+        .upload-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+		
+        .upload-section input[type="file"] {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+		
+        .upload-section input[type="file"]:hover {
+            background-color: #45a049;
+        }
+		
+        .result {
+            margin-top: 20px;
+        }
+		
+		.herbarium-gallery p{
+			text-align: center;
+			font-size: 2.0rem;
+    
+		 }
+		 
+        .plant-info {
+            margin-bottom: 20px;
+        }
+      
+        .herbarium-gallery img {
+            width: 250px; /* adjust the width as needed */
+			height: auto;
+			object-fit: cover; /* ensures the image fits properly */
+			border: 5px solid #4CAF50; /* green border */
+			border-radius: 8px; /* rounded corners */
+			padding: 2px; /* space between image and border */
+			box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* subtle shadow effect */
+        }
+		
+		.gallery {
+        display: flex;
+        justify-content: center;
+        gap: 10px; /* space between images */
+		}
+		
+  
