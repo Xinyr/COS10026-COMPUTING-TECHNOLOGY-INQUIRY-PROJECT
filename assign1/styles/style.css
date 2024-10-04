@@ -799,7 +799,7 @@ iframe {
     background-color: #e8f0e8;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    padding: 20px;
+    padding: 60px;
     margin: 0;
     box-sizing: border-box;
     width: 100%;
@@ -836,7 +836,7 @@ iframe {
     flex: 1;
     background-color: #f4f9f4;
     border: 2px solid #a3c4a8;
-    padding: 60px;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     height: 652.838px;
