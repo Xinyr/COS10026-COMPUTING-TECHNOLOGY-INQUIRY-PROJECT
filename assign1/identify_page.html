@@ -7,7 +7,6 @@
 	<meta name="description" content="Identify Herbarium">
 	<meta name="keywords" content="keyword1, keyword2, keyword3, etc">
     <title>Identify Page</title>
-    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
     <link rel="stylesheet" type="text/css" href="./styles/style.css">
 </head>
 <body class="identify">
@@ -16,7 +15,7 @@
             <li><a href="./index.html" class="logo_img"><img src="./images/logo.jpg" alt="home page logo"></a></li>
             <li><a href="./plants_classification.html">Plants Classification</a></li>
             <li><a href="#tutorial">Tutorial</a></li>
-            <li><a href="#enquiry">Enquiry</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
             <li><a href="./identify_page.html">Identify</a></li>
             <li><a href="#contribute">Contribute</a></li>
         </ul>
@@ -27,7 +26,6 @@
             </ul>
         </div>
     </div>
-
     <header>
         <h1>Herbarium Identification Guide</h1>
         <p>An introduction to identifying and cataloging plant specimens for herbariums.</p>
@@ -36,15 +34,13 @@
 
  <div class="identify_container">
     <section>
-        <h2>What is a Herbarium?</h2>
-        <p><strong>A herbarium is a collection of preserved plant specimens and associated data used for scientific study. Specimens may be whole plants or plant parts; these will usually be in a dried form mounted on a sheet, but they may also be kept in alcohol or other preservative.</strong></p>
-
+       
         <figure class="identify">
             <img src="images/driedherbarium1.jpg" alt="Dried plant specimen in a herbarium sheet">
             <figcaption>A dried plant specimen mounted on a herbarium sheet.</figcaption>
         </figure>
 
-        <h3>How to Identify a Specimen</h3>
+        <h2>How to Identify a Specimen</h2>
         <p>When identifying a plant for a herbarium, several characteristics must be closely observed:</p>
         <ol>
             <li>Leaf shape and arrangement</li>
@@ -53,48 +49,56 @@
             <li>Stem type and branching</li>
         </ol>
     </section>
+</div>
 
-    <section>
-        <h2>Steps to Prepare Herbarium Specimens</h2>
-        <p>Proper preservation and documentation are crucial in creating a high-quality herbarium specimen. Below are the common steps followed:</p>
+<div class="identify_container">
+        <h3>Plant Identification Tool</h3>
 
-        <h3>Basic Steps</h3>
-        <dl>
-            <dt>Collection</dt>
-            <dd>Collect the plant carefully, ensuring you have all essential parts like leaves, stems, flowers, or seeds.</dd>
-            <dt>Pressing</dt>
-            <dd>Place the specimen between sheets of paper and press it flat using a plant press or heavy books.</dd>
-            <dt>Drying</dt>
-            <dd>Leave the pressed specimen in a dry area until it is completely dehydrated.</dd>
-            <dt>Mounting</dt>
-            <dd>Mount the dried plant on a herbarium sheet using glue or tape, making sure to label it correctly.</dd>
-        </dl>
-    </section>
+        <!-- Upload Section -->
+        <div class="upload-section">
+            <label for="plant-photo">Upload a Plant Photo:</label><br><br>
+            <input type="file" id="plant-photo" accept="image/*" onchange="displayPlantInfo()">
+        </div>
+</div>
+<div class="identify_container">
+	<div class="result">
+	<h4>Plant Identification Result</h4>
+        
+        <!-- Plant Information Section -->
+        <section class="plant-info">
+            <p><strong>Scientific Plant Name: </strong>Rosa Rubiginosa</p>
+            <p><strong>Common Name:</strong> Sweetbriar Rose</p>
+        </section>
 
-    <aside>
-        <h3>Did You Know?</h3>
-        <p>The oldest known herbarium specimen dates back to the 16th century! Learn more about its history on the <a href="https://plantlet.org/herbarium-its-history-functionimportance/"  target="_blank">Herbarium History page</a>.</p>
-    </aside>
+        <!-- Herbarium Specimens Gallery -->
+        <section class="herbarium-gallery">
+            <h5>Plant Identified:</h5>
+            <div class="gallery">
+                <img src="images/SweetBriarRose.jpg" alt="SweetBriarRose">
+                <img src="images/SweetBriarRose2.jpg" alt="SweetBriarRose">
+                <img src="images/SweetBriarRose3.jpg" alt="SweetBriarRose">
+                <!-- Add more images as needed -->
+            </div>
+			<p><strong>Result Accuracy:88.33%</strong></p>
+        </section>
+	</div>
 </div>
 <footer>
-    <div class="footer_container">
-        <div class="acknowledgements">
-            <h3>Acknowledgements</h3>
-            <a href="https://pixabay.com/de/photos/die-dschungel-von-chiapas-1865639/">pixabay</a>
-            <a href="https://www.w3schools.com">W3Schools</a>
-        </div>
-        <div>
-            <address>
-                21, Jump St.<br />
-                93300, Kuching<br />
-                Sarawak<br />
-                Malaysia
-            </address>
-        </div>
-    </div>
-</footer>
-</body>
-
-
-
+            <div class="footer_container">
+                <div class="acknowledgements">
+                    <h3>Acknowledgements</h3>
+                    <a href="https://pixabay.com/de/photos/die-dschungel-von-chiapas-1865639/">pixabay</a>
+                    <a href="https://www.w3schools.com">W3Schools</a>
+                </div>
+                <div>
+                    <address>
+                        21, Jump St.<br />
+                        93300, Kuching<br />
+                        Sarawak<br />
+                        Malaysia
+                    </address>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
