@@ -503,11 +503,88 @@ iframe {
 	background-color: #3ce0d0;
 	color: white;
 }
+/*Forms*/
+.formbody {
+    background-color: #e8f0e8;
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+.form h2 {
+    text-align: center;
+    color: #4c774c;
+    font-family: 'Georgia', serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.form input{
+    padding-right: 10%;
+}
+.form h1 {
+    font-size: 400%;
+}
+.form form {
+    margin: 0 auto;
+}
 
+.form fieldset {
+    margin-bottom: 20px;
+    border: 1px solid #a3c4a8;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.form label {
+    display: block;
+    font-weight: bold;
+    color: #2f4f4f;
+    margin-bottom: 8px;
+}
+
+.form input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #b7d2b5;
+    border-radius: 4px;
+    background-color: #eef7ee;
+    font-size: 14px;
+}
+
+.form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #6b8f71;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: auto;
+}
+
+.form button:hover {
+    background-color: #5e7d64;
+}
 /* Login/Registration Page */
+.login_color{
+	background-color: #a8da76;
+}
+.loginform{
+    flex: 1;
+    background-color: #f4f9f4;
+    border: 2px solid #a3c4a8;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);	
+    overflow-y: auto;
+    box-sizing: border-box;
+}
 .logincontainer{
-	padding-left: 30%;
-	padding-right: 30%;
+	padding-left: 25%;
+	padding-right: 25%;
+	padding-bottom: 60px;
 	display: flexbox;
 }
 .logininput{
@@ -521,6 +598,13 @@ iframe {
 	text-align: center;
 	align-self: center;
 	border-radius: 15px;
+	padding-top: 50px;	
+}
+.padding20{
+	padding: 20px;
+}
+.register_req{
+	opacity: 40%;
 }
 /* plants classification */
 
