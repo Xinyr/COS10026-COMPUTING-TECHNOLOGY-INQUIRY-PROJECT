@@ -931,3 +931,68 @@ iframe {
 .enquiry_reset_button:hover {
 	background-color: #d32f2f;
 }
+
+/* Contribution-section */
+
+.body_contribution {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f7f0;
+    color: #333;
+    margin: 0; 
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.h1-contribution {
+    color: #2e644f;
+    margin-bottom: 20px;
+}
+
+.form-contribution {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.label-contribution {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.input-contribution[type="text"], 
+.select-contribution, 
+.input-contribution[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.input-contribution[type="file"] {
+    padding: 5px;
+}
+
+.button-contribution {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-contribution:hover {
+    background-color: #45a049;
+}
