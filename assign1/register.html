@@ -9,7 +9,7 @@
     <title>Herbarium Registration</title>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
-<body style="background-color: #a8da76;">
+<body class="login_color">
     <div class="navbar">
         <ul>
             <li><a href="./index.html" class="logo_img"><img src="./images/logo.jpg"></a></li>
@@ -26,16 +26,14 @@
             </ul>
         </div>
     </div>
-    <div style="margin-top: 50px;" class="boxlogin">
-        <div class="logincontainer">
-            <h1 style="font-size: 400%;">Registration </h1>
-        </div>
+    <div class="form">
+    <div class="boxlogin">
+            <h1>Registration </h1>
     </div>
-    <div style="padding: 5%;">
         <div class="logincontainer">
             <div class="loginform">
-            <form method="post" action="mailto:104396635@students.swinburne.edu.my">
-                    <h1 style="font-size: 1.5em; padding: 10px; padding-top: 30px; text-align: center;">Register here</h1>
+            <form id="form" method="post" action="mailto:104396635@students.swinburne.edu.my">
+                    <h2>Register here</h2>
                     <label for="username">Username:</label>
                     <input class="logininput" type="text" name="username" id="username" required="required" placeholder="Username:"> <br> <br>
                     <label for="email">Email:</label>
@@ -43,9 +41,9 @@
                     <label for="password">Password:</label>
                     <input class="logininput" type="text" name="password" id="password" required="required" placeholder="Password:">
                     <br>
-                    <div style=" opacity: 40%;">
+                    <div class="register_req">
                     <p> Password must have:
-                        <ol style="margin-left: 20px;">
+                        <ol>
                         
                         <li>
                             Must have 1 uppercase character
@@ -60,13 +58,12 @@
                         </ol>
                     </p>    
                 </div>
-                    <div style="padding-top: 40px;">
-                    <button class="boxlogin" style="font-size: 24px;" type="submit">Register</button>
-                    </div><br>
+                    <button type="submit">Register</button><br>
                 </form>
             </div>
         </div> 
     </div>
+</div>
 <footer>
     <div class="footer_container">
         <div class="acknowledgements">
