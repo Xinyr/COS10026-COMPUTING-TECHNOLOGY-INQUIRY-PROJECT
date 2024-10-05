@@ -1,19 +1,42 @@
 <!DOCTYPE html>
-<html lang="en" class="index">
+<html>
     <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="./styles/style.css">
-        <title>Background Image</title>
+        <style>
+            body, html{
+                background-color: #1a3300;
+                overflow: hidden;
+                margin: 0;
+            }
+            .bg-text {
+                color: white;
+                font-weight: bold;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 2;
+                width: 80%;
+                padding: 20px;
+                text-align: center;
+                overflow:hidden;
+            }
+            .bg-image{
+                height: 100vh;
+                /* background image from :https://pixabay.com/de/photos/die-dschungel-von-chiapas-1865639/ */
+                background-image: url("./images/overview_main.jpg"); 
+                filter: blur(1vh);
+                -webkit-filter: blur(1vh); /* for compatibility with older browsers */
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                overflow:hidden;
+            }
+        </style>
     </head>
-    <body class="index">
+    <body>
         <div class="bg-image"></div>
-
-        <div class="bg-title">
+        <div class="bg-text">
             <h2>Herbarium</h2>
-        </div>
-        <div class="bg-body">
-            <p>As a means to research and record the world's plant biodiversity, botanists, taxonomists, naturalists, and physicians have painstakingly gathered herbarium specimens over the ages.</p>
-            <p>These specimens are conserved by pressing, drying, and mounting them on sheets of paper. Each specimen has a label with pertinent information including the scientific name, place of origin, date of collection, and name of the institution that houses it.</p>
         </div>
     </body>
 </html>
