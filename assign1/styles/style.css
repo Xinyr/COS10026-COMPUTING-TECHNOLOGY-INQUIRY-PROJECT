@@ -48,7 +48,7 @@ footer {
 	margin-left: 20px;
 }
 
-.acknowledgements {
+.footer_container > .acknowledgements {
 	display:flex;
 	flex-direction: column;
 	justify-content: center;
@@ -131,7 +131,8 @@ iframe {
 	margin: 0px;
 	padding: 0px;
 	overflow: hidden;
-  overflow-y: hidden;
+  	overflow-y: hidden;
+	margin-top: 50px;
 }
 
 /* index background image */
@@ -169,7 +170,7 @@ iframe {
 	padding: 20px;
 	text-align: center;
 	overflow:hidden;
-	font-size: 2em;
+	font-size: 1.5em;
 	width: 50vw;
 	background-color: hsla(90, 100%, 20%, 0.397);
 	border-radius: 50px;
@@ -191,11 +192,89 @@ iframe {
 /* about me hub */
 
 .about_me_hub {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
     position: relative;
-    top: 100px;
-    margin-bottom: 10%;
+	margin: 10px 0 50px 0;
 }
 
+.about_me_header {
+	background-color: #4CAF50;
+	margin-top: 50px;
+	padding: 50px 0;
+    display: flex;
+    position: relative;
+    justify-content: center;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.flip_card_container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 60%;
+	border: 1px solid black;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding: 20px 10px;
+}
+
+.flip_card {	/* following code from w3schools */
+	background-color: transparent;
+	width: 300px;
+	height: 300px;
+	perspective: 1000px;
+	margin: 30px 10px;
+}
+
+.flip_card_inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	border-radius: 10px;
+}
+
+.flip_card:hover .flip_card_inner {
+	transform: rotateY(180deg);
+}
+
+.flip_card_front, .flip_card_back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.flip_card_front {
+	background-color: #bbb;
+	color: black;
+	border-radius: 10px;
+}
+
+.flip_card_back {
+	background-color: #4CAF50;
+	color: black;
+	transform: rotateY(180deg);
+	border-radius: 10px;
+}	/* end of code from w3 schools */
+
+.flip_profile_img{
+	width: inherit;
+	height: inherit;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+.flip_card_back a{
+	color: white;
+}
 
 .about_me {
 	position: relative;
@@ -213,6 +292,7 @@ iframe {
 }
 
 .about_me > section {
+	margin-top: 10px;
 	color: #000000;
 	background-color: aliceblue;
 	border-radius: 5px;
@@ -441,4 +521,563 @@ iframe {
 	text-align: center;
 	align-self: center;
 	border-radius: 15px;
+}
+/* plants classification */
+
+.classification_header {
+    display: flex;
+    position: relative;
+    margin-top: 10vh;
+    justify-content: center;
+	font-weight: bold;
+	font-size: 3em;
+}
+
+.classification_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	margin-bottom: 2vh;
+}
+
+.classification_body {
+	font-size: 1em;
+	background-color: #b4b4b4;
+}
+
+.classification {
+	background-color: #fff;
+	padding: 10px;
+	width: 60%;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	border: 2px solid #000;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.classification aside{
+	font-size: 0.8em;
+	font-style: italic;
+	align-self:flex-end;
+}
+
+.classification figure{
+	padding: 10px;
+	width:inherit;
+	border: 1px solid #000;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.classification img {
+	width:100%;
+}
+
+
+/* plants classification */
+
+.classification_header {
+	margin: 50px 0 0 0;
+	background-color: #4CAF50;
+    display: flex;
+    position: relative;
+    justify-content: center;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.classification_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	margin: 10px 0 50px 0;
+}
+
+.classification_body {
+    position: relative;
+    font-size: 1em;
+}
+
+.classification_body::before {
+    content: "";
+    background-image: url(./images/classification_background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.classification {
+	background-color: #fff;
+	padding: 10px;
+	width: 60%;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	border: 2px solid #000;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.classification aside{
+	font-size: 0.8em;
+	font-style: italic;
+	align-self: center;
+}
+
+.classification figure{
+	padding: 10px;
+	width:inherit;
+	border: 1px solid #000;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.classification img {
+	width:100%;
+}
+
+.classification dt::before {
+	content: "> ";
+	list-style-type: armenian;
+}
+
+/* Enquiry-section */
+
+.body_enquiry {
+    background-color: #e8f0e8;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+	margin-top: 50px;
+}
+
+/* Styling the container to split the page into two halves */
+.enquiry_image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+/* Left side image section */
+.enquiry_image-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.enquiry-image {
+    width: 100%;
+    height: auto;
+    max-height: 652.838px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Right side form section */
+.enquiry_form-section {
+    flex: 1;
+    background-color: #f4f9f4;
+    border: 2px solid #a3c4a8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 652.838px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.enquiry_h2 {
+    text-align: center;
+    color: #4c774c;
+    font-family: 'Georgia', serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form_equiry {
+    margin: 0 auto;
+}
+
+.fieldset_enquiry {
+    margin-bottom: 20px;
+    border: 1px solid #a3c4a8;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.label_enquiry {
+    display: block;
+    font-weight: bold;
+    color: #2f4f4f;
+    margin-bottom: 8px;
+}
+
+.input_enquiry,
+.select_enquiry {
+    width: 100%;
+    padding: 10px 0 10px 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #b7d2b5;
+    border-radius: 4px;
+    background-color: #eef7ee;
+    font-size: 14px;
+}
+
+.button_enquiry {
+    width: 100%;
+    padding: 12px;
+    background-color: #6b8f71;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: auto;
+}
+
+.button_enquiry:hover {
+    background-color: #5e7d64;
+}
+
+/*identify page*/
+
+.identify body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    position: relative;
+}
+
+ .identifypage_kaiseng body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/plant.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    opacity: 1; /* Adjust this value to set the desired opacity */
+    z-index: -1; /* Make sure the image stays behind the content */
+}
+ 
+
+    /* Container for page content */
+.identify_container {
+    max-width: 1300px;
+    margin: 0 auto;
+    border: 8px solid green; /* Green border */
+    padding: 20px; /* Space inside the box */
+    border-radius: 20px; /* Rounded corners */
+    margin-top: 20px; /* Space above the container */
+    font-size: 20px; /* Increase font size */
+    background-color: white; /* Solid background color for the div */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for a lifted effect */
+    z-index: 1; /* Place above the background */
+    position: relative; /* Keep the div content on top of the background */
+}
+
+/* Header styling */
+ .identify header {
+	 background-color: #4CAF50;
+         color: white;
+         padding: 30px 0;
+         text-align: center;
+	 z-index: 1; /* Place above the background */
+	 margin-top: 50px; /* Move the header down by adding top margin */			
+        }
+
+/* Main title styling */
+.identify header h1 {
+	font-size: 3.5rem;
+	margin: 0;
+	}
+
+	.identify header p {
+	font-size: 1.3rem; /* Increase the font size as needed */
+	margin-top: 10px;
+	}
+
+	/* Section and subsection headings */
+	
+	.identify  h2 {
+		color: #333;
+		margin-top: 20px;
+	}
+
+        /* Style for the figure element */
+.identify  figure {
+        margin: 30px 0;
+        text-align: center;
+ 	transition: transform 0.2s ease; /* Smooth transition */
+        }
+
+        /* Image styling */
+ .identify  figure img {
+        border: 2px solid #ddd;
+        border-radius: 5px;
+        width: 50%;
+        max-width: 600px;
+	 transition: transform 0.3s ease; /* Smooth transition */
+        }
+
+        /* Hover effect for figure */
+         .identify_container figure:hover img{
+            transform: scale(1.5); /* Zoom in the image */
+        }
+
+        /* Styling for figure captions */
+         .identify_container figcaption{
+            font-style: italic;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        /* Styling for links */
+         .identify_container a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+         .identify_container a:hover {
+            text-decoration: underline;
+        }
+		
+		/*image upload styling*/
+		.upload_img {
+			max-width: 1300px;
+			margin: 0 auto;
+			border: 8px solid green; /* Green border */
+			padding: 20px; /* Space inside the box */
+			border-radius: 20px; /* Rounded corners */
+			margin-top: 20px; /* Space above the container */
+			font-size: 20px; /* Increase font size */
+			background-color: white; /* Solid background color for the div */
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for a lifted effect */
+			z-index: 1; /* Place above the background */
+			position: relative; /* Keep the div content on top of the background */
+				}
+				
+         .identify h3, h4{
+            text-align: center;
+            color: #4CAF50;
+			font-size: 2.5rem;
+        }
+		
+		.identify h5 {
+			text-align: center;
+			font-size: 2.0rem;
+		}
+		
+		.plant-info p {
+			font-size:25px;
+		}
+		
+        .upload-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+		
+        .upload-section input[type="file"] {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+		
+        .upload-section input[type="file"]:hover {
+            background-color: #45a049;
+        }
+		
+        .result {
+            margin-top: 20px;
+        }
+	.herbarium-gallery p{
+		text-align: center;
+		font-size: 2.0rem;
+    	 }
+		 
+        .plant-info {
+            margin-bottom: 20px;
+        }
+      
+        .herbarium-gallery img {
+      width: 250px; /* adjust the width as needed */
+	    height: auto;
+	    object-fit: cover; /* ensures the image fits properly */
+	    border: 5px solid #4CAF50; /* green border */
+	    border-radius: 8px; /* rounded corners */
+	    padding: 2px; /* space between image and border */
+	    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* subtle shadow effect */
+        }
+		
+	.gallery {
+        display: flex;
+        justify-content: center;
+        gap: 10px; /* space between images */
+		}
+
+
+/* Reset some default browser styles */
+*.care_page {
+    margin:0 auto;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* Base Typography */
+.care_page body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color:lightblue;
+    padding: 20px;
+}
+
+/* Container for the main content */
+.care_page article{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+.care_page header {
+    text-align: center;
+    margin-top: 70px; /* Move the header down by adding top margin */
+}
+
+.care_page header h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+}
+
+/* Section Styling */
+.care_page section {
+    margin-bottom: 30px;
+}
+
+.care_page section h2 {
+    font-size: 1.8em;
+    color: #34495e;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 5px;
+}
+
+.care_page section p {
+    margin-bottom: 15px;
+    font-size: 1em;
+    color: #555;
+}
+
+/* Figure and Image Styling */
+.care_page figure p, figcaption {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.care_page figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.care_page figcaption {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 5px;
+}
+
+/* Ordered and Unordered Lists */
+.care_page ol, .care_page ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.care_page ol li, .care_page ul li {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+/* Definition List */
+.care_page dl {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.care_page dt {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #2c3e50;
+}
+
+.care_page dd {
+    margin-left: 20px;
+    color: #555;
+}
+
+/* Aside Styling */
+.care_page aside {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-left: 4px solid #3498db;
+    margin-bottom: 30px;
+}
+
+.care_page aside h3 {
+    font-size: 1.3em;
+    color: #2980b9;
+    margin-bottom: 10px;
+}
+
+.care_page aside p {
+    font-size: 0.95em;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .care_page body {
+        padding: 10px;
+    }
+
+  .care_page header h1 {
+        font-size: 2em;
+    }
+
+  .care_page section h2 {
+        font-size: 1.5em;
+    }
+
+   .care_page aside h3 {
+        font-size: 1.1em;
+    }
 }
