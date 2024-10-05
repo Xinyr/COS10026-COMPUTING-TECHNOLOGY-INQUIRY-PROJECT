@@ -811,22 +811,22 @@ iframe {
         }
 
 /* Main title styling */
- .identify header h1 {
-	 font-size: 3.5rem;
-	 margin: 0;
-        }
+.identify header h1 {
+	font-size: 3.5rem;
+	margin: 0;
+	}
 
-		.identify header p {
-		font-size: 1.3rem; /* Increase the font size as needed */
-		margin-top: 10px;
-		}
+	.identify header p {
+	font-size: 1.3rem; /* Increase the font size as needed */
+	margin-top: 10px;
+	}
 
-        /* Section and subsection headings */
-      
-       .identify  h2 {
-            color: #333;
-            margin-top: 20px;
-        }
+	/* Section and subsection headings */
+	
+	.identify  h2 {
+		color: #333;
+		margin-top: 20px;
+	}
 
         /* Style for the figure element */
 .identify  figure {
@@ -1017,12 +1017,12 @@ iframe {
 }
 
 /* Ordered and Unordered Lists */
-.care_page ol, ul {
+.care_page ol, .care_page ul {
     margin-left: 20px;
     margin-bottom: 15px;
 }
 
-.care_page ol li, ul li {
+.care_page ol li, .care_page ul li {
     margin-bottom: 10px;
     font-size: 1em;
 }
@@ -1080,3 +1080,4 @@ iframe {
    .care_page aside h3 {
         font-size: 1.1em;
     }
+}
