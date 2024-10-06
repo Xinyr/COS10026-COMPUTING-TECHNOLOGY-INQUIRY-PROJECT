@@ -1178,3 +1178,86 @@ iframe {
         font-size: 1.1em;
     }
 }
+/* cheng */ 
+.profile_table.cheng td{
+	background-color: #3ce0d0;
+	color: white;
+}
+.tutorialH1{
+	padding-top: 40px;
+	text-align: center;
+	font-size: 3em;
+	text-decoration: underline;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+.tutorialH2{
+	text-align: center;
+	font-size: 2em;
+	text-decoration: underline;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+.tutorialH3{
+	font-size: 1.8em;
+	text-decoration: underline;
+	padding-left: 3px;
+}
+.tutorialContainer{
+	grid-template-columns: 1fr 1fr;
+	display: grid;
+	border: 1px solid black;
+}
+.tutorialPara{
+	font-size: 1.2em;
+}
+.tutorialPicL{
+	width: 600px;
+	height: 600px;
+}
+.tutorialPicR{
+	width: 600px;
+	height: 600px;
+}
+.tutorialCaption{
+	padding-left: 10px;
+}
+.tutorialBorder{
+	border: #1a3300 solid 1px;
+	border-collapse: collapse;
+}
+figure{
+	grid-template-rows: 10fr 1fr;
+	display: grid;
+}
+.tutorialPara{
+	text-align: center;
+	display: flex;
+}
+.tutorialdl{
+	padding-left: 3px;
+}
+.tutorialBorder.aside{
+	padding-left: 3px;
+	border: #1a3300 solid 1px;
+	border-collapse: collapse;
+}
+.btmH3{
+	font-size: 1.5em;
+	padding-left: 3px;
+}
+.tutorialBody{
+	background-color: rgb(237, 237, 224);
+}
+.tutorialVid{
+	display: block;
+	grid-column: 1 / span 2;
+	z-index: auto;
+	width: 560px;
+	height: 315px;
+	border: medium none color;
+	margin: auto;
+	padding: 20px;
+	overflow: visible;
+  overflow-y: visible;
+}
