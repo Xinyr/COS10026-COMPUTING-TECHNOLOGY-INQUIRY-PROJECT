@@ -675,60 +675,6 @@ iframe {
 .register_req{
 	opacity: 40%;
 }
-/* plants classification */
-
-.classification_header {
-    display: flex;
-    position: relative;
-    margin-top: 10vh;
-    justify-content: center;
-	font-weight: bold;
-	font-size: 3em;
-}
-
-.classification_container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-	margin-bottom: 2vh;
-}
-
-.classification_body {
-	font-size: 1em;
-	background-color: #b4b4b4;
-}
-
-.classification {
-	background-color: #fff;
-	padding: 10px;
-	width: 60%;
-	display: flex;
-    flex-direction: column;
-    align-items: center;
-	border: 2px solid #000;
-	border-radius: 10px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.classification aside{
-	font-size: 0.8em;
-	font-style: italic;
-	align-self:flex-end;
-}
-
-.classification figure{
-	padding: 10px;
-	width:inherit;
-	border: 1px solid #000;
-	border-radius: 10px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.classification img {
-	width:100%;
-}
-
 
 /* plants classification */
 
