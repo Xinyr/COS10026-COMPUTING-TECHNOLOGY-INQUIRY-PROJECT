@@ -1261,3 +1261,6 @@ figure{
 	overflow: visible;
   overflow-y: visible;
 }
+.tutorialSelect{
+	grid-template-columns: 1fr 1fr 1fr;
+}
