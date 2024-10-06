@@ -1225,7 +1225,8 @@ iframe {
 	border: 5px solid #336600;
 }
 .tutorialCaption{
-	padding-left: 10px;
+	padding-left: 2px;
+	text-align: left;
 }
 .tutorialBorder{
 	border: #1a3300 solid 1px;
