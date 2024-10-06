@@ -1206,7 +1206,10 @@ iframe {
 .tutorialContainer{
 	grid-template-columns: 1fr 1fr;
 	display: grid;
-	border: 1px solid black;
+	border: 3px solid #336600;
+	border-collapse: collapse;
+	margin-bottom: -3px;
+	overflow: hidden;
 }
 .tutorialPara{
 	font-size: 1.2em;
@@ -1214,10 +1217,12 @@ iframe {
 .tutorialPicL{
 	width: 600px;
 	height: 600px;
+	border: 5px solid #336600;
 }
 .tutorialPicR{
 	width: 600px;
 	height: 600px;
+	border: 5px solid #336600;
 }
 .tutorialCaption{
 	padding-left: 10px;
@@ -1225,6 +1230,7 @@ iframe {
 .tutorialBorder{
 	border: #1a3300 solid 1px;
 	border-collapse: collapse;
+	overflow: hidden;
 }
 figure{
 	grid-template-rows: 10fr 1fr;
@@ -1241,6 +1247,7 @@ figure{
 	padding-left: 3px;
 	border: #1a3300 solid 1px;
 	border-collapse: collapse;
+	overflow: hidden;
 }
 .btmH3{
 	font-size: 1.5em;
@@ -1265,13 +1272,16 @@ figure{
 	padding-top: 55px;
 	display: flex;
 	justify-content: flex-start;
-	text-decoration: none;
+}
+.tutorialButtonCare{
+	padding-top: 85px;
+	display: flex;
+	justify-content: flex-start;
 }
 .tutorialSelect{
 	text-align: center;
-	text-decoration: none;
 	font-size: 1.5em;
-	border: 5px solid lightblue;
+	border: 5px solid rgb(30, 199, 255);
 	background-color: rgb(183, 244, 183);
 	margin-right: 10px;
 	transition: 20ms;
@@ -1279,4 +1289,7 @@ figure{
 .tutorialSelect:hover{
 	background-color: lightgray;
 	border-color: purple;
+}
+.tutorialSelectWord{
+	text-decoration: none;
 }
