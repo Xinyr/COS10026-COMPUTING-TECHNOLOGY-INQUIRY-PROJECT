@@ -1261,6 +1261,22 @@ figure{
 	overflow: visible;
   overflow-y: visible;
 }
+.tutorialButton{
+	padding-top: 55px;
+	display: flex;
+	justify-content: flex-start;
+	text-decoration: none;
+}
 .tutorialSelect{
-	grid-template-columns: 1fr 1fr 1fr;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.5em;
+	border: 5px solid lightblue;
+	background-color: rgb(183, 244, 183);
+	margin-right: 10px;
+	transition: 20ms;
+}
+.tutorialSelect:hover{
+	background-color: lightgray;
+	border-color: purple;
 }
