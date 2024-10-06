@@ -37,6 +37,21 @@ ul img {
     object-fit: cover;
 }
 
+.index_body::before {
+    content: "";
+    background-image: url(./images/driedherbarium1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(5px);
+    z-index: -1;
+}
+
 footer {
 	background-color: #336600;
 }
@@ -70,7 +85,7 @@ footer {
 	text-decoration: underline;
 }
 
-/* https://dev.to/ljcdev/hamburger-css-no-js-2dfa this is a burger menu alternative? */
+/* navbar */
 /* the following css is derived from https://www.w3schools.com/howto/howto_css_fixed_menu.asp */
 .navbar {
 	z-index: 3;
@@ -108,7 +123,7 @@ footer {
 	background-color: #1a3300;
 	color: white;
 }
-
+/* iframe */
 .blur-container {
 	overflow: hidden;
 }
@@ -124,6 +139,7 @@ footer {
 }
 
 iframe {
+	vertical-align: bottom;
 	z-index: 1;
 	width: 100%;
 	height: 100vh;
@@ -131,8 +147,61 @@ iframe {
 	margin: 0px;
 	padding: 0px;
 	overflow: hidden;
-  	overflow-y: hidden;
+	overflow-y: hidden;
 	margin-top: 50px;
+}
+
+/* slideshow */
+
+#slideshow {
+  text-align: center;
+  overflow: hidden;
+  height: 510px;
+  width: 728px;
+  margin: 0 auto;
+}
+
+.slide-wrapper {
+  width: 2912px;
+  animation: slide 18s ease infinite;
+}
+
+.slide {
+  float: left;
+  height: 510px;
+  width: 728px;
+}
+
+.slide:nth-child(1) {
+  background: #D93B65;
+}
+
+.slide:nth-child(2) {
+  background: #037E8C;
+}
+
+.slide:nth-child(3) {
+  background: #36BF66;
+}
+
+.slide:nth-child(4) {
+  background: #D9D055;
+}
+
+.slide-img {
+	width:100%;
+	height:100%;
+	object-fit: cover;
+}
+
+@keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -728px;}
+  50% {margin-left: -728px;}
+  60% {margin-left: -1456px;}
+  70% {margin-left: -1456px;}
+  80% {margin-left: -2184px;}
+  90% {margin-left: -2184px;}
 }
 
 /* index background image */
@@ -149,7 +218,7 @@ iframe {
 	top: 50%;
 	left: 75%;
 	transform: translate(-50%, -50%);
-	z-index: 2;
+	z-index: 1;
 	width: 80%;
 	padding: 20px;
 	text-align: center;
@@ -166,11 +235,11 @@ iframe {
 	top: 50%;
 	left: 50%;
 	transform: translate(-90%, -50%);
-	z-index: 2;
+	z-index: 1;
 	padding: 20px;
 	text-align: center;
 	overflow:hidden;
-	font-size: 2em;
+	font-size: 1.5em;
 	width: 50vw;
 	background-color: hsla(90, 100%, 20%, 0.397);
 	border-radius: 50px;
@@ -202,12 +271,11 @@ iframe {
 .about_me_header {
 	background-color: #4CAF50;
 	margin-top: 50px;
-	padding: 50px 0;
     display: flex;
     position: relative;
     justify-content: center;
 	font-weight: bold;
-	font-size: 1.5em;
+	font-size: 2em;
 }
 
 .flip_card_container {
@@ -503,11 +571,88 @@ iframe {
 	background-color: #3ce0d0;
 	color: white;
 }
+/*Forms*/
+.formbody {
+    background-color: #e8f0e8;
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+.form h2 {
+    text-align: center;
+    color: #4c774c;
+    font-family: 'Georgia', serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.form input{
+    padding-right: 10%;
+}
+.form h1 {
+    font-size: 400%;
+}
+.form form {
+    margin: 0 auto;
+}
 
+.form fieldset {
+    margin-bottom: 20px;
+    border: 1px solid #a3c4a8;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.form label {
+    display: block;
+    font-weight: bold;
+    color: #2f4f4f;
+    margin-bottom: 8px;
+}
+
+.form input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #b7d2b5;
+    border-radius: 4px;
+    background-color: #eef7ee;
+    font-size: 14px;
+}
+
+.form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #6b8f71;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: auto;
+}
+
+.form button:hover {
+    background-color: #5e7d64;
+}
 /* Login/Registration Page */
+.login_color{
+	background-color: #a8da76;
+}
+.loginform{
+    flex: 1;
+    background-color: #f4f9f4;
+    border: 2px solid #a3c4a8;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);	
+    overflow-y: auto;
+    box-sizing: border-box;
+}
 .logincontainer{
-	padding-left: 30%;
-	padding-right: 30%;
+	padding-left: 25%;
+	padding-right: 25%;
+	padding-bottom: 60px;
 	display: flexbox;
 }
 .logininput{
@@ -521,201 +666,13 @@ iframe {
 	text-align: center;
 	align-self: center;
 	border-radius: 15px;
+	padding-top: 50px;	
 }
-
-/* identify page */
-
-.identify body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    position: relative;
+.padding20{
+	padding: 20px;
 }
-
- .identifypage_kaiseng body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('images/plant.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat;
-    opacity: 1; /* Adjust this value to set the desired opacity */
-    z-index: -1; /* Make sure the image stays behind the content */
-}
- 
-
-    /* Container for page content */
-.identify_container {
-    max-width: 1300px;
-    margin: 0 auto;
-    border: 8px solid green; /* Green border */
-    padding: 20px; /* Space inside the box */
-    border-radius: 20px; /* Rounded corners */
-    margin-top: 20px; /* Space above the container */
-    font-size: 20px; /* Increase font size */
-    background-color: white; /* Solid background color for the div */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for a lifted effect */
-    z-index: 1; /* Place above the background */
-    position: relative; /* Keep the div content on top of the background */
-}
-
-
-        /* Header styling */
-       .identify header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 30px 0;
-            text-align: center;
-			z-index: 1; /* Place above the background */
-			margin-top: 50px; /* Move the header down by adding top margin */			
-        }
-
-        /* Main title styling */
-       .identify header h1 {
-            font-size: 3.5rem;
-            margin: 0;
-        }
-		
-		.identify header p {
-		font-size: 1.3rem; /* Increase the font size as needed */
-		margin-top: 10px;
-		}
-
-        /* Section and subsection headings */
-       .identify   h2 {
-            color: #4CAF50;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 10px;
-            margin-top: 40px;
-        }
-
-       .identify  h3 {
-            color: #333;
-            margin-top: 20px;
-        }
-
-        /* Styling for paragraphs */
-         .identify_container p {
-            font-size: 1.3rem;
-            margin: 15px 0;
-        }
-
-        /* Style for the figure element */
-        .identify  figure {
-            margin: 30px 0;
-            text-align: center;
-            transition: transform 0.2s ease; /* Smooth transition */
-        }
-
-        /* Image styling */
-        .identify  figure img {
-            border: 2px solid #ddd;
-            border-radius: 5px;
-            width: 50%;
-            max-width: 600px;
-            transition: transform 0.3s ease; /* Smooth transition */
-        }
-
-        /* Hover effect for figure */
-         .identify_container figure:hover img{
-            transform: scale(1.5); /* Zoom in the image */
-        }
-
-        /* Styling for figure captions */
-         .identify_container figcaption{
-            font-style: italic;
-            color: #555;
-            margin-top: 10px;
-        }
-
-        /* Ordered list styling */
-        .identify_container ol {
-            margin-left: 20px;
-        }
-
-        /* Definition list styling */
-         .identify_container dl {
-            background-color: #fff;
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .identify_container dl dt {
-            font-weight: bold;
-            margin-top: 10px;
-            color: #4CAF50;
-        }
-
-         .identify_container dl dd {
-            margin-left: 20px;
-            margin-bottom: 10px;
-        }
-
-        /* Styling for the aside element */
-         .identify_container aside {
-            background-color: #e7f3e7;
-            padding: 20px;
-            margin: 40px 0;
-            border-left: 5px solid #4CAF50;
-        }
-
-         .identify_container aside h3 {
-            margin-top: 0;
-        }
-
-        /* Styling for links */
-         .identify_container a {
-            color: #4CAF50;
-            text-decoration: none;
-        }
-
-         .identify_container a:hover {
-            text-decoration: underline;
-        }
-
-        /* Footer styling */
-        
-		footer {
-	background-color: #336600;
-}
-
-.footer_container {
-	width: 100%;
-	color: #d9ffb3;
-	padding: 50px 0 20px;
-	margin-left: 20px;
-}
-
-.acknowledgements {
-	display:flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.acknowledgements a{
-	padding-top: 5px;
-	text-decoration: none;
-	color:#d9ffb3;
-	transition: color 0.3s ease;
-}
-
-.acknowledgements a:hover{
-	color:#1a3300;
-}
-
-.acknowledgements h3{
-	color:#d9ffb3;
-	text-decoration: underline;
+.register_req{
+	opacity: 40%;
 }
 
 /* plants classification */
@@ -947,6 +904,42 @@ iframe {
     min-height: 100vh;
 }
 
+/* Styling the container to split the page into two halves*/
+.contribution-image-container {
+	display:flex;
+	justify-content: space-between;
+    align-items: stretch;
+    max-width: 1200px;
+    margin: 0 auto;
+	position: relative;
+	z-index: 1;
+}
+
+.contribution-image-section {
+	flex: 1;
+	margin-right: 20px;
+}
+
+.contribution-image {
+	width: 100%;
+    height: auto;
+    max-height: 652.838px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contribution-form-section {
+	flex: 1;
+    background-color: #f4f9f4;
+    border: 2px solid #a3c4a8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 652.838px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
 .h1-contribution {
     color: #2e644f;
     margin-bottom: 20px;
@@ -996,3 +989,452 @@ iframe {
 .button-contribution:hover {
     background-color: #45a049;
 }
+
+.contribution-footer {
+	width: 100%;
+    background-color: #09491c; /* Adjust as needed */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/*identify page*/
+
+.identify body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    position: relative;
+}
+
+ .identifypage_kaiseng body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/plant.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    opacity: 1; /* Adjust this value to set the desired opacity */
+    z-index: -1; /* Make sure the image stays behind the content */
+}
+ 
+
+    /* Container for page content */
+.identify_container {
+    max-width: 1300px;
+    margin: 0 auto;
+    border: 8px solid green; /* Green border */
+    padding: 20px; /* Space inside the box */
+    border-radius: 20px; /* Rounded corners */
+    margin-top: 20px; /* Space above the container */
+    font-size: 20px; /* Increase font size */
+    background-color: white; /* Solid background color for the div */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for a lifted effect */
+    z-index: 1; /* Place above the background */
+    position: relative; /* Keep the div content on top of the background */
+}
+
+/* Header styling */
+ .identify header {
+	 background-color: #4CAF50;
+         color: white;
+         padding: 30px 0;
+         text-align: center;
+	 z-index: 1; /* Place above the background */
+	 margin-top: 50px; /* Move the header down by adding top margin */			
+        }
+
+/* Main title styling */
+.identify header h1 {
+	font-size: 3.5rem;
+	margin: 0;
+	}
+
+	.identify header p {
+	font-size: 1.3rem; /* Increase the font size as needed */
+	margin-top: 10px;
+	}
+
+	/* Section and subsection headings */
+	
+	.identify  h2 {
+		color: #333;
+		margin-top: 20px;
+	}
+
+        /* Style for the figure element */
+.identify  figure {
+        margin: 30px 0;
+        text-align: center;
+ 	transition: transform 0.2s ease; /* Smooth transition */
+        }
+
+        /* Image styling */
+ .identify  figure img {
+        border: 2px solid #ddd;
+        border-radius: 5px;
+        width: 50%;
+        max-width: 600px;
+	 transition: transform 0.3s ease; /* Smooth transition */
+        }
+
+        /* Hover effect for figure */
+         .identify_container figure:hover img{
+            transform: scale(1.5); /* Zoom in the image */
+        }
+
+        /* Styling for figure captions */
+         .identify_container figcaption{
+            font-style: italic;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        /* Styling for links */
+         .identify_container a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+         .identify_container a:hover {
+            text-decoration: underline;
+        }
+		
+		/*image upload styling*/
+		.upload_img {
+			max-width: 1300px;
+			margin: 0 auto;
+			border: 8px solid green; /* Green border */
+			padding: 20px; /* Space inside the box */
+			border-radius: 20px; /* Rounded corners */
+			margin-top: 20px; /* Space above the container */
+			font-size: 20px; /* Increase font size */
+			background-color: white; /* Solid background color for the div */
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for a lifted effect */
+			z-index: 1; /* Place above the background */
+			position: relative; /* Keep the div content on top of the background */
+				}
+				
+         .identify h3, h4{
+            text-align: center;
+            color: #4CAF50;
+			font-size: 2.5rem;
+        }
+		
+		.identify h5 {
+			text-align: center;
+			font-size: 2.0rem;
+		}
+		
+		.plant-info p {
+			font-size:25px;
+		}
+		
+        .upload-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+		
+        .upload-section input[type="file"] {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+		
+        .upload-section input[type="file"]:hover {
+            background-color: #45a049;
+        }
+		
+        .result {
+            margin-top: 20px;
+        }
+	.herbarium-gallery p{
+		text-align: center;
+		font-size: 2.0rem;
+    	 }
+		 
+        .plant-info {
+            margin-bottom: 20px;
+        }
+      
+        .herbarium-gallery img {
+      width: 250px; /* adjust the width as needed */
+	    height: auto;
+	    object-fit: cover; /* ensures the image fits properly */
+	    border: 5px solid #4CAF50; /* green border */
+	    border-radius: 8px; /* rounded corners */
+	    padding: 2px; /* space between image and border */
+	    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* subtle shadow effect */
+        }
+		
+	.gallery {
+        display: flex;
+        justify-content: center;
+        gap: 10px; /* space between images */
+		}
+
+
+/* Reset some default browser styles */
+*.care_page {
+    margin:0 auto;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* Base Typography */
+.care_page body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color:lightblue;
+}
+
+/* Container for the main content */
+.care_page article{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+.care_page header {
+    text-align: center;
+    margin-top: 70px; /* Move the header down by adding top margin */
+}
+
+.care_page header h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+}
+
+/* Section Styling */
+.care_page section {
+    margin-bottom: 30px;
+}
+
+.care_page section h2 {
+    font-size: 1.8em;
+    color: #34495e;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 5px;
+}
+
+.care_page section p {
+    margin-bottom: 15px;
+    font-size: 1em;
+    color: #555;
+}
+
+/* Figure and Image Styling */
+.care_page figure p, figcaption {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.care_page figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.care_page figcaption {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 5px;
+}
+
+/* Ordered and Unordered Lists */
+.care_page ol, .care_page ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.care_page ol li, .care_page ul li {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+/* Definition List */
+.care_page dl {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.care_page dt {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #2c3e50;
+}
+
+.care_page dd {
+    margin-left: 20px;
+    color: #555;
+}
+
+/* Aside Styling */
+.care_page aside {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-left: 4px solid #3498db;
+    margin-bottom: 30px;
+}
+
+.care_page aside h3 {
+    font-size: 1.3em;
+    color: #2980b9;
+    margin-bottom: 10px;
+}
+
+.care_page aside p {
+    font-size: 0.95em;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .care_page body {
+        padding: 10px;
+    }
+
+  .care_page header h1 {
+        font-size: 2em;
+    }
+
+  .care_page section h2 {
+        font-size: 1.5em;
+    }
+
+   .care_page aside h3 {
+        font-size: 1.1em;
+    }
+}
+/* cheng */ 
+.profile_table.cheng td{
+	background-color: #3ce0d0;
+	color: white;
+}
+.tutorialH1{
+	padding-top: 40px;
+	text-align: center;
+	font-size: 3em;
+	text-decoration: underline;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+.tutorialH2{
+	text-align: center;
+	font-size: 2em;
+	text-decoration: underline;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+.tutorialH3{
+	font-size: 1.8em;
+	text-decoration: underline;
+	padding-left: 3px;
+}
+.tutorialContainer{
+	grid-template-columns: 1fr 1fr;
+	display: grid;
+	border: 3px solid #336600;
+	border-collapse: collapse;
+	margin-bottom: -3px;
+	overflow: hidden;
+}
+.tutorialPara{
+	font-size: 1.2em;
+}
+.tutorialPicL{
+	width: 600px;
+	height: 600px;
+	border: 5px solid #336600;
+}
+.tutorialPicR{
+	width: 600px;
+	height: 600px;
+	border: 5px solid #336600;
+}
+.tutorialCaption{
+	padding-left: 2px;
+	text-align: left;
+}
+.tutorialBorder{
+	border: #1a3300 solid 1px;
+	border-collapse: collapse;
+	overflow: hidden;
+}
+figure{
+	grid-template-rows: 10fr 1fr;
+	display: grid;
+}
+.tutorialPara{
+	text-align: center;
+	display: flex;
+}
+.tutorialdl{
+	padding-left: 3px;
+}
+.tutorialBorder.aside{
+	padding-left: 3px;
+	border: #1a3300 solid 1px;
+	border-collapse: collapse;
+	overflow: hidden;
+}
+.btmH3{
+	font-size: 1.5em;
+	padding-left: 3px;
+}
+.tutorialBody{
+	background-color: rgb(237, 237, 224);
+}
+.tutorialVid{
+	display: block;
+	grid-column: 1 / span 2;
+	z-index: auto;
+	width: 560px;
+	height: 315px;
+	border: medium none color;
+	margin: auto;
+	padding: 20px;
+	overflow: visible;
+  overflow-y: visible;
+}
+.tutorialButton{
+	padding-top: 55px;
+	display: flex;
+	justify-content: flex-start;
+}
+.tutorialButtonCare{
+	padding-top: 85px;
+	display: flex;
+	justify-content: flex-start;
+}
+.tutorialSelect{
+	text-align: center;
+	font-size: 1.5em;
+	border: 5px solid rgb(30, 199, 255);
+	background-color: rgb(183, 244, 183);
+	margin-right: 10px;
+	transition: 20ms;
+}
+.tutorialSelect:hover{
+	background-color: lightgray;
+	border-color: purple;
+}
+.tutorialSelectWord{
+	text-decoration: none;
+}
+>>>>>>> main
