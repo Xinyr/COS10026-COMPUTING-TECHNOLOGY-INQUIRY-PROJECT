@@ -1272,7 +1272,7 @@ figure{
 .tutorialButton{
 	padding-top: 55px;
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
 }
 .tutorialButtonCare{
 	padding-top: 85px;
