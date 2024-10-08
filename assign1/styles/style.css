@@ -123,7 +123,6 @@ footer {
 	background-color: #1a3300;
 	color: white;
 }
-
 /* iframe */
 .blur-container {
 	overflow: hidden;
@@ -1377,7 +1376,7 @@ iframe {
 	border-collapse: collapse;
 	overflow: hidden;
 }
-.tutorialfigure{
+figure{
 	grid-template-rows: 10fr 1fr;
 	display: grid;
 }
@@ -1416,12 +1415,12 @@ iframe {
 .tutorialButton{
 	padding-top: 55px;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 }
 .tutorialButtonCare{
 	padding-top: 85px;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 }
 .tutorialSelect{
 	text-align: center;
@@ -1438,4 +1437,3 @@ iframe {
 .tutorialSelectWord{
 	text-decoration: none;
 }
->>>>>>> main
