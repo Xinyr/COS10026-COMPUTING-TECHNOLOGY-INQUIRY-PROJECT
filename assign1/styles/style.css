@@ -868,7 +868,7 @@ iframe {
     font-family: 'Arial', sans-serif;
     background-color: #f3f7f0;
     color: #333;
-    margin: 0; 
+    margin: 50px 0 0 0; 
     padding: 0;
     display: flex;
     justify-content: center;
@@ -961,14 +961,6 @@ iframe {
 
 .button-contribution:hover {
     background-color: #45a049;
-}
-
-.contribution-footer {
-	width: 100%;
-    background-color: #09491c; /* Adjust as needed */
-    color: #fff;
-    padding: 20px;
-    text-align: center;
 }
 
 /*identify page*/
