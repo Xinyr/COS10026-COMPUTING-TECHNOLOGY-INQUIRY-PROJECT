@@ -850,11 +850,125 @@ iframe {
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-top: auto;
+	flex: 1;
+	margin: 0 5px;
 }
 
 .button_enquiry:hover {
     background-color: #5e7d64;
 }
+
+.enquiry_reset_button:hover {
+	background-color: #d32f2f;
+}
+
+/* Contribution-section */
+
+.body_contribution {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f7f0;
+    color: #333;
+    margin: 0; 
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Styling the container to split the page into two halves*/
+.contribution-image-container {
+	display:flex;
+	justify-content: space-between;
+    align-items: stretch;
+    max-width: 1200px;
+    margin: 0 auto;
+	position: relative;
+	z-index: 1;
+}
+
+.contribution-image-section {
+	flex: 1;
+	margin-right: 20px;
+}
+
+.contribution-image {
+	width: 100%;
+    height: auto;
+    max-height: 652.838px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contribution-form-section {
+	flex: 1;
+    background-color: #f4f9f4;
+    border: 2px solid #a3c4a8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 652.838px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.h1-contribution {
+    color: #2e644f;
+    margin-bottom: 20px;
+}
+
+.form-contribution {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.label-contribution {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.input-contribution[type="text"], 
+.select-contribution, 
+.input-contribution[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.input-contribution[type="file"] {
+    padding: 5px;
+}
+
+.button-contribution {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-contribution:hover {
+    background-color: #45a049;
+}
+
+.contribution-footer {
+	width: 100%;
+    background-color: #09491c; /* Adjust as needed */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 
 /*identify page*/
 
