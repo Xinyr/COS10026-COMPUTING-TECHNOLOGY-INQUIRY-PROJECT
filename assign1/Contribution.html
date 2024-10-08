@@ -74,16 +74,22 @@
                         <option value="Pisum sativum">Pisum sativum</option>
                         <option value="Triticum aestivum">Triticum aestivum</option>
                     </select>
-    
-                    <!-- Photos Upload (Fresh Leaf) -->
-                    <label class="label-contribution" for="freshLeafPhoto">Photos Upload (Fresh Leaf):</label>
-                    <input class="input-contribution" type="file" id="freshLeafPhoto" name="freshLeafPhoto" accept="image/*"
-                        required>
-    
-                    <!-- Photos Upload (Herbarium) -->
-                    <label class="label-contribution" for="herbariumPhoto">Photos Upload (Herbarium):</label>
-                    <input class="input-contribution" type="file" id="herbariumPhoto" name="herbariumPhoto" accept="image/*"
-                        required>
+
+                    <p>Photo Upload (Fresh Leaf)</p>
+                    <div class="contribution-photo-upload">
+                        <label class="label-contribution" for="freshLeafPhoto">
+                            <span class="contribute-icon">⇧</span> <p>Choose a photo or drag it here</p>
+                            <input class="input-contribution" type="file" id="freshLeafPhoto" name="freshLeafPhoto" accept="image/*" required>
+                        </label>
+                    </div>
+
+                    <p>Photo Upload (Herbarium)</p>
+                    <div class="contribution-photo-upload">
+                        <label class="label-contribution" for="freshLeafPhoto">
+                            <span class="contribute-icon">⇧</span> <p>Choose a photo or drag it here</p>
+                            <input class="input-contribution" type="file" id="herbariumPhoto" name="herbariumPhoto" accept="image/*" required>
+                        </label>
+                    </div>
     
                     <!-- Submit Button -->
                     <button class="button-contribution" type="submit">Submit Contribution</button>
