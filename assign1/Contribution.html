@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contribution Page</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body class="body_contribution">
+    <div class="navbar">
+        <ul>
+            <li><a href="./index.html" class="logo_img"><img src="./images/logo.jpg" alt="home page logo"></a></li>
+            <li><a href="./plants_classification.html">Plants Classification</a></li>
+            <li><a href="#tutorial">Tutorial</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+            <li><a href="./identify_page.html">Identify</a></li>
+            <li><a href="#contribute">Contribute</a></li>
+        </ul>
+        <div>
+            <ul class="right-bar">
+                <li><a href="./about_me_hub.html">About us</a></li>
+                <li><a href="./login.html">Login/ Sign up</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="contribution-image-container">
+        <!-- Left section with the image -->
+        <div class="contribution-image-section">
+            <img src="./images/contribution-herbarium.jpg" alt="Herbarium" class="contribution-image">
+        </div>
+
+        <div class="contribution-form-section">
+            <h1 class="h1-contribution">Contribution Page</h1>
+            <p>Please fill out the form below to contribute plant information to the herbarium collection.</p>
+
+            <form class="form-contribution" action="/submit-contribution" method="post" enctype="multipart/form-data">
+                <!-- Plant Name -->
+                <label class="label-contribution" for="plantName">Plant Name:</label>
+                <input class="input-contribution" type="text" id="plantName" name="plantName" maxlength="25"
+                    pattern="[A-Za-z\s]+" required placeholder="Enter the plant name">
+
+                <!-- Plant Family -->
+                <label class="label-contribution" for="plantFamily">Plant Family:</label>
+                <select class="select-contribution" id="plantFamily" name="plantFamily" required>
+                    <option value="">Select Family</option>
+                    <option value="Asteraceae">Asteraceae</option>
+                    <option value="Fabaceae">Fabaceae</option>
+                    <option value="Rosaceae">Rosaceae</option>
+                    <option value="Lamiaceae">Lamiaceae</option>
+                    <option value="Poaceae">Poaceae</option>
+                </select>
+
+                <!-- Plant Genus -->
+                <label class="label-contribution" for="plantGenus">Plant Genus:</label>
+                <select class="select-contribution" id="plantGenus" name="plantGenus" required>
+                    <option value="">Select Genus</option>
+                    <option value="Rosa">Rosa</option>
+                    <option value="Mentha">Mentha</option>
+                    <option value="Centaurea">Centaurea</option>
+                    <option value="Pisum">Pisum</option>
+                    <option value="Triticum">Triticum</option>
+                </select>
+
+                <!-- Plant Species -->
+                <label class="label-contribution" for="plantSpecies">Plant Species:</label>
+                <select class="select-contribution" id="plantSpecies" name="plantSpecies" required>
+                    <option value="">Select Species</option>
+                    <option value="Rosa gallica">Rosa gallica</option>
+                    <option value="Mentha spicata">Mentha spicata</option>
+                    <option value="Centaurea cyanus">Centaurea cyanus</option>
+                    <option value="Pisum sativum">Pisum sativum</option>
+                    <option value="Triticum aestivum">Triticum aestivum</option>
+                </select>
+
+                <!-- Photos Upload (Fresh Leaf) -->
+                <label class="label-contribution" for="freshLeafPhoto">Photos Upload (Fresh Leaf):</label>
+                <input class="input-contribution" type="file" id="freshLeafPhoto" name="freshLeafPhoto" accept="image/*"
+                    required>
+
+                <!-- Photos Upload (Herbarium) -->
+                <label class="label-contribution" for="herbariumPhoto">Photos Upload (Herbarium):</label>
+                <input class="input-contribution" type="file" id="herbariumPhoto" name="herbariumPhoto" accept="image/*"
+                    required>
+
+                <!-- Submit Button -->
+                <button class="button-contribution" type="submit">Submit Contribution</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="contribution-footer">
+            <div class="acknowledgements">
+                <h3>Acknowledgements</h3>
+                <a href="https://pixabay.com/de/photos/die-dschungel-von-chiapas-1865639/">pixabay</a>
+                <a href="https://www.w3schools.com">W3Schools</a>
+                <a href="https://doi.org/10.1016/j.neucom.2021.10.015">plant classification image</a>
+                <a href="https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:321611-1">vatica chinensis image</a>
+                <a href="https://www.freepik.com/free-vector/watercolor-botanical-garden-background_39556113.htm#query=plant%20background&position=1&from_view=keyword&track=ais_hybrid&uuid=c17629f7-20c9-4a25-a171-4d4fc8334d8d">Freepik</a>
+            </div>
+            <div>
+                <address>
+                    21, Jump St.<br />
+                    93300, Kuching<br />
+                    Sarawak<br />
+                    Malaysia
+                </address>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
