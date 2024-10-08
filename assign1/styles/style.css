@@ -1348,7 +1348,7 @@ iframe {
 	border-collapse: collapse;
 	overflow: hidden;
 }
-figure{
+.tutorialfigure{
 	grid-template-rows: 10fr 1fr;
 	display: grid;
 }
