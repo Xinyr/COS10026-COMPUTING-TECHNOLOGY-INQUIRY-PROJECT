@@ -1393,7 +1393,7 @@ iframe {
 .tutorialButtonCare{
 	padding-top: 85px;
 	display: flex;
-	justify-content: flex-start;
+	justify-content:center;
 }
 .tutorialSelect{
 	text-align: center;
