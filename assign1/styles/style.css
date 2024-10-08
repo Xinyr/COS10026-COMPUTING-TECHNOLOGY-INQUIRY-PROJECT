@@ -903,8 +903,8 @@ iframe {
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
-	position: relative;
-	overflow: hidden;
+	position: relative; /* Add this to position .body_contribution relatively */
+	overflow: hidden;   /* Prevents content from spilling outside of this section */
 }
 
 .body_contribution:before {
