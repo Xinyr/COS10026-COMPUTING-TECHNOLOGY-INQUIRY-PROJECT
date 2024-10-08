@@ -123,6 +123,7 @@ footer {
 	background-color: #1a3300;
 	color: white;
 }
+
 /* iframe */
 .blur-container {
 	overflow: hidden;
@@ -1376,7 +1377,7 @@ iframe {
 	border-collapse: collapse;
 	overflow: hidden;
 }
-figure{
+.tutorialfigure{
 	grid-template-rows: 10fr 1fr;
 	display: grid;
 }
@@ -1415,12 +1416,12 @@ figure{
 .tutorialButton{
 	padding-top: 55px;
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
 }
 .tutorialButtonCare{
 	padding-top: 85px;
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
 }
 .tutorialSelect{
 	text-align: center;
