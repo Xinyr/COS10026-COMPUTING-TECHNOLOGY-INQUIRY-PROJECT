@@ -903,6 +903,22 @@ iframe {
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
+	position: relative;
+	overflow: hidden;
+}
+
+.body_contribution:before {
+	content: "";
+	position:absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/overview_main.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	filter: blur(1vh); 
 }
 
 /* Styling the container to split the page into two halves*/
