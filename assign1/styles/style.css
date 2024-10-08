@@ -1392,7 +1392,7 @@ figure{
 .tutorialButtonCare{
 	padding-top: 85px;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 }
 .tutorialSelect{
 	text-align: center;
