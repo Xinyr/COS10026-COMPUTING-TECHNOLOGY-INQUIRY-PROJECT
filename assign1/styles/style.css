@@ -353,6 +353,7 @@ iframe {
 .flip_card_back {
 	background-color: #4CAF50;
 	color: black;
+	font-size: 1.5em;
 	transform: rotateY(180deg);
 	border-radius: 10px;
 }
@@ -368,6 +369,7 @@ iframe {
 
 .flip_card_back a {
 	color: white;
+	text-decoration: none;
 }
 
 .about_me {
