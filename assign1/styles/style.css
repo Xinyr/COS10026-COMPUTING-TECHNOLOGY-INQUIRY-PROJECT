@@ -60,7 +60,6 @@ footer {
 	width: 100%;
 	color: #d9ffb3;
 	padding: 50px 0 20px;
-	margin-left: 20px;
 }
 
 .footer_container>.acknowledgements {
@@ -70,8 +69,18 @@ footer {
 	align-items: center;
 }
 
-.acknowledgements section {
+.acknowledgements div {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
 
+.acknowledgements div section {
+	flex-direction: column;
+	display: flex;
+	background-color: #336600 !important;
+	font-size: 1em !important;
 }
 
 .acknowledgements a {
@@ -87,6 +96,14 @@ footer {
 
 .acknowledgements h3 {
 	text-decoration: underline;
+}
+
+#copyright {
+	text-align: center;
+}
+
+#footer_address {
+	margin: 20px 0 0 20px;
 }
 
 /* navbar */
@@ -861,6 +878,7 @@ select {
 	margin-top: 50px;
 	overflow: hidden;
 	position: relative;
+	background-color: #000;
 }
 
 .body_enquiry::before {
@@ -870,12 +888,12 @@ select {
 	left: 0;
 	width: 100%;
 	height: 140vh;
-	background-image: url(../images/overview_main.jpg);
+	background-image: url(./images/enquiry_background.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	filter: blur(1vh);
-	z-index: -1;
+	z-index: 0;
 }
 
 /* Styling the container to split the page into two halves */
@@ -1004,6 +1022,7 @@ select {
 	/* Add this to position .body_contribution relatively */
 	overflow: hidden;
 	/* Prevents content from spilling outside of this section */
+	background-color: #000;
 }
 
 .body_contribution:before {
@@ -1013,7 +1032,7 @@ select {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-image: url(../images/overview_main.jpg);
+	background-image: url(./images/overview_main.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
