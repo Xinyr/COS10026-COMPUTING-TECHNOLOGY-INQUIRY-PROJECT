@@ -70,6 +70,10 @@ footer {
 	align-items: center;
 }
 
+.acknowledgements section {
+
+}
+
 .acknowledgements a {
 	padding-top: 5px;
 	text-decoration: none;
@@ -626,7 +630,7 @@ iframe {
 }
 
 .profile_table.kaiseng td {
-	padding: 5px;
+	padding: 5px 0.7em;
 	color: #000000;
 	border-radius: 5px;
 	background-color: #c2c2d6;
