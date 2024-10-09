@@ -467,7 +467,7 @@ iframe {
 	padding: 10px;
 }
 
-.about_me>img {
+.about_me img {
 	object-fit: cover;
 	height: 200px;
 	width: 200px;
@@ -565,6 +565,10 @@ iframe {
 
 .profile_table.fred td {
 	background-color: cornsilk;
+}
+
+.about_me img.fred {
+	border-color: #000;
 }
 
 /* Faridz page */
