@@ -1556,19 +1556,25 @@ figcaption {
 	overflow-y: visible;
 }
 
+
 .tutorialButton {
+
 	padding-top: 55px;
 	display: flex;
 	justify-content: center;
 }
 
+
 .tutorialButtonCare {
+
 	padding-top: 85px;
 	display: flex;
 	justify-content: center;
 }
 
+
 .tutorialSelect {
+
 	text-align: center;
 	font-size: 1.5em;
 	border: 5px solid rgb(30, 199, 255);
