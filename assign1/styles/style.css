@@ -124,6 +124,57 @@ footer {
 	color: white;
 }
 
+.dropbtn { /* code from w3schools*/
+	background-color: #336600;
+	color: #d9ffb3;
+	font-size: 16px;
+	padding: 14px 16px;
+	border: none;
+	border-radius: 5px;
+	margin-left: 5px;
+	transition: background-color 0.3s ease;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	margin-top: 0.5em;
+	border-radius: 5px;
+	position: fixed;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.dropdown_link {
+	color: black !important;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	margin: 0 !important;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+	opacity: 1;
+	visibility: visible;
+}
+
+.dropdown:hover .dropbtn {
+	background-color: #1a3300;
+	color: white;
+}
+
+
 /* iframe */
 .blur-container {
 	overflow: hidden;
@@ -1597,3 +1648,4 @@ figcaption {
 .tutorialSelectWord {
 	text-decoration: none;
 }
+
