@@ -447,7 +447,7 @@ iframe {
 }
 
 .profile_table {
-	width: 40%;
+	width: 45%;
 	border-collapse: separate;
 	border-spacing: 5px 5px;
 	background-color: transparent;
@@ -466,7 +466,7 @@ iframe {
 }
 
 .profile_table td {
-	padding: 5px;
+	padding: 5px 0.7em;
 	color: #000000;
 	border-radius: 5px;
 	background-color: #c2c2d6;
