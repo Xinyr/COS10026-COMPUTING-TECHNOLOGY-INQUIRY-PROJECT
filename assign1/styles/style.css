@@ -130,7 +130,7 @@ footer {
 }
 
 .blur-image {
-	background-image: "placeholder.jpg";
+	background-image: url(../backgroundimage.html);
 	filter: blur(8px);
 	-webkit-filter: blur(8px);
 	/* for compatibility with older browsers */
@@ -692,11 +692,11 @@ select {
 	padding-left: 25%;
 	padding-right: 25%;
 	padding-bottom: 60px;
-	display: flexbox;
+	display: flex;
 }
 
 .logininput {
-	display: flexbox;
+	display: flex;
 	font-size: 16px;
 	border-style: groove;
 	width: 80%;
@@ -1555,7 +1555,7 @@ figcaption {
 	z-index: auto;
 	width: 560px;
 	height: 315px;
-	border: medium none color;
+	border: medium none none;
 	margin: auto;
 	padding: 20px;
 	overflow: visible;
