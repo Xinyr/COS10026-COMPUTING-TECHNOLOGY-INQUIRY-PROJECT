@@ -1409,14 +1409,13 @@ h4 {
 	max-width: 1000px;
 	margin: 0 auto;
 	padding: 20px;
-	background-color: rgb(237, 237, 224);
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Header Styling */
 .care_page header {
 	text-align: center;
-	margin-top: 70px;
+	margin-top: 30px;
 	/* Move the header down by adding top margin */
 }
 
@@ -1434,7 +1433,7 @@ h4 {
 	font-size: 1.8em;
 	color: #34495e;
 	margin-bottom: 10px;
-	border-bottom: 2px solid #ecf0f1;
+	border-bottom: 2px solid black;
 	padding-bottom: 5px;
 }
 
@@ -1452,10 +1451,16 @@ figcaption {
 }
 
 .care_page figure img {
-	max-width: 100%;
+	max-width: 50%;
 	height: auto;
+	display: block;
+	margin: 0 auto;
 	border: 1px solid #ddd;
 	border-radius: 5px;
+}
+
+.care_page figure img:hover {
+    transform: scale(1.5); 
 }
 
 .care_page figcaption {
