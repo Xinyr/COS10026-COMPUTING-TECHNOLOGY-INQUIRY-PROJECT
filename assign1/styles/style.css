@@ -1405,11 +1405,14 @@ h4 {
 	/* space between images */
 }
 
+/*care page style/*
 
 /* Reset some default browser styles */
-*.care_page {
-	margin: 0 auto;
-	padding: 0;
+.care_page {
+	margin: 0 auto ;
+    padding: 0; 
+    width: 100%; 
+    height: 100%; 
 	box-sizing: border-box;
 }
 
@@ -1422,10 +1425,12 @@ h4 {
 
 /* Container for the main content */
 .care_page article {
-	max-width: 1000px;
-	margin: 0 auto;
-	padding: 20px;
-	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 0 auto; 
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+	box-sizing: border-box;
+	border:3px solid #336600;
 }
 
 /* Header Styling */
@@ -1443,14 +1448,16 @@ h4 {
 /* Section Styling */
 .care_page section {
 	margin-bottom: 30px;
+    align-items:justify;
 }
 
-.care_page section h2 {
-	font-size: 1.8em;
-	color: #34495e;
-	margin-bottom: 10px;
-	border-bottom: 2px solid black;
-	padding-bottom: 5px;
+.care_page section h2 { 
+	font-size: 2.0em;
+    color: #34495e;
+	text-align: left;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 .care_page section p {
@@ -1467,7 +1474,7 @@ figcaption {
 }
 
 .care_page figure img {
-	max-width: 50%;
+	max-width: 30%;
 	height: auto;
 	display: block;
 	margin: 0 auto;
@@ -1493,9 +1500,8 @@ figcaption {
 	margin-bottom: 15px;
 }
 
-.care_page ol li,
-.care_page ul li {
-	margin-bottom: 10px;
+.care_page ol li {
+	margin-bottom: 15px;
 	font-size: 1em;
 }
 
@@ -1521,7 +1527,7 @@ figcaption {
 	background-color: #ecf0f1;
 	padding: 15px;
 	border-left: 4px solid #3498db;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 .care_page aside h3 {
@@ -1547,6 +1553,7 @@ figcaption {
 
 	.care_page section h2 {
 		font-size: 1.5em;
+        white-space: normal; 
 	}
 
 	.care_page aside h3 {
