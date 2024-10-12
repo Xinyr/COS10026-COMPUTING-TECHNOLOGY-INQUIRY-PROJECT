@@ -1424,7 +1424,14 @@ h4 {
 
 /* Container for the main content */
 .care_page article {
-    
+    padding: 20px; 
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+	box-sizing: border-box;
+	border: 5px solid #336600;
+	margin-right: 50px;
+	margin-left: 50px;
+	margin-bottom: 15px;
 }
 
 /* Header Styling */
