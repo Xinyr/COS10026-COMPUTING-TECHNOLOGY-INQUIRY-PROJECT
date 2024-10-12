@@ -855,6 +855,7 @@ select {
 .classification figure {
 	padding: 10px;
 	width: 45%;
+	height: 393px;
 	align-self: center;
 	border: 1px solid #000;
 	border-radius: 10px;
@@ -863,6 +864,8 @@ select {
 
 .classification img {
 	width: 100%;
+	object-fit: cover;
+	max-height: 100%;
 }
 
 .classification dt::before {
