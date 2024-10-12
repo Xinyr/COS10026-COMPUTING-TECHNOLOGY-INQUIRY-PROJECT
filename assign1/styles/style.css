@@ -1616,6 +1616,7 @@ figcaption {
 	display: flex;
 	padding-left: 3px;
 	padding-right: 3px;
+	margin: 3px;
 }
 
 .tutorialdl {
