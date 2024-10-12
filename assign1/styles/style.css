@@ -1462,6 +1462,7 @@ figcaption {
 	margin: 0 auto;
 	border: 1px solid #ddd;
 	border-radius: 5px;
+	transition: transform 0.2s ease;
 }
 
 .care_page figure img:hover {
