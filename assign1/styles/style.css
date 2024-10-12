@@ -1573,7 +1573,7 @@ figcaption {
 	display: grid;
 	border: 5px solid #336600;
 	border-collapse: collapse;
-	margin-bottom: -3px;
+	margin-bottom: 15px;
 	margin-right: 50px;
 	margin-left: 50px;
 	overflow: hidden;
