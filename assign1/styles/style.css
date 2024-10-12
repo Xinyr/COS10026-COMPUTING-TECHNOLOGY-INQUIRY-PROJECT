@@ -1352,7 +1352,7 @@ h4 {
 /* Section Styling */
 .care_page section {
 	margin-bottom: 30px;
-    align-items:justify;
+    text-align:justify;
 }
 
 .care_page section h2 { 
@@ -1365,9 +1365,17 @@ h4 {
 }
 
 .care_page section p {
+	text-align: center;
 	margin-bottom: 15px;
 	font-size: 1em;
 	color: #555;
+}
+
+section#maintenance p {
+    text-align: left;
+    margin-bottom: 15px;
+    font-size: 1em;
+    color: #555;
 }
 
 /* Figure and Image Styling */
@@ -1397,8 +1405,7 @@ figcaption {
 }
 
 /* Ordered and Unordered Lists */
-.care_page ol,
-.care_page ul {
+.care_page ol, ul {
 	margin-left: 20px;
 	margin-bottom: 15px;
 }
