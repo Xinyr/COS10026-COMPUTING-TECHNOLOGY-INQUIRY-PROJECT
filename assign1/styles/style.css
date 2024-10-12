@@ -1223,6 +1223,7 @@ select {
 	/* Rounded corners */
 	margin-top: 20px;
 	/* Space above the container */
+	margin-bottom: 15px;
 	font-size: 20px;
 	/* Increase font size */
 	background-color: white;
@@ -1335,14 +1336,14 @@ select {
 	/* Keep the div content on top of the background */
 }
 
-.identify h3,
+.identify_container h3,
 h4 {
 	text-align: center;
 	color: #4CAF50;
 	font-size: 2.5rem;
 }
 
-.identify h5 {
+.identify_container h5 {
 	text-align: center;
 	font-size: 1.5rem;
 }
