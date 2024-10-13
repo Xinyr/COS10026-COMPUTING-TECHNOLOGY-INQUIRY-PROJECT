@@ -1711,6 +1711,12 @@ figcaption {
 	text-align: center;
 	font-size: 300%;
 }
+.enhance p{
+	text-align: center;
+	font-size: 150%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
 .centeritem {
 	justify-content: center;
 	display: flex;
@@ -1736,7 +1742,6 @@ figcaption {
 	width: 10000px;
 	animation: eslide 50s ease infinite;
 }
-
 .eslide {
 	float: left;
 	height: 540px;
@@ -1859,4 +1864,25 @@ figcaption {
 .font2x{
 	font-size: 200%;
 	text-align: center;
+}
+.eupload_img {
+	align-items: center;
+	max-width: 700px;
+	margin: 0 auto;
+	border: 8px solid green;
+	/* Green border */
+	border-radius: 20px;
+	/* Rounded corners */
+	margin-top: 20px;
+	/* Space above the container */
+	font-size: 20px;
+	/* Increase font size */
+	background-color: white;
+	/* Solid background color for the div */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	/* Shadow for a lifted effect */
+	z-index: 1;
+	/* Place above the background */
+	position: relative;
+	/* Keep the div content on top of the background */
 }
