@@ -1223,6 +1223,7 @@ select {
 	/* Rounded corners */
 	margin-top: 20px;
 	/* Space above the container */
+	margin-bottom: 15px;
 	font-size: 20px;
 	/* Increase font size */
 	background-color: white;
@@ -1335,14 +1336,14 @@ select {
 	/* Keep the div content on top of the background */
 }
 
-.identify h3,
+.identify_container h3,
 h4 {
 	text-align: center;
 	color: #4CAF50;
 	font-size: 2.5rem;
 }
 
-.identify h5 {
+.identify_container h5 {
 	text-align: center;
 	font-size: 1.5rem;
 }
@@ -1405,34 +1406,39 @@ h4 {
 	/* space between images */
 }
 
+/*care page style/*
 
 /* Reset some default browser styles */
-*.care_page {
-	margin: 0 auto;
-	padding: 0;
+.care_page {
+	margin: 0 auto ;
+    padding: 0; 
+    width: 100%; 
+    height: 100%; 
 	box-sizing: border-box;
 }
 
 /* Base Typography */
 .care_page body{
 	font-family: Arial, Helvetica, sans-serif;
-	line-height: 1.6;
 	background-color: rgb(237, 237, 224);
 }
 
 /* Container for the main content */
 .care_page article {
-	max-width: 1000px;
-	margin: 0 auto;
-	padding: 20px;
-	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px; 
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+	box-sizing: border-box;
+	border: 5px solid #336600;
+	margin-right: 50px;
+	margin-left: 50px;
+	margin-bottom: 15px;
 }
 
 /* Header Styling */
 .care_page header {
 	text-align: center;
-	margin-top: 30px;
-	/* Move the header down by adding top margin */
+	margin-top: 80px;
 }
 
 .care_page header h1 {
@@ -1443,20 +1449,30 @@ h4 {
 /* Section Styling */
 .care_page section {
 	margin-bottom: 30px;
+    text-align:justify;
 }
 
-.care_page section h2 {
-	font-size: 1.8em;
-	color: #34495e;
-	margin-bottom: 10px;
-	border-bottom: 2px solid black;
-	padding-bottom: 5px;
+.care_page section h2 { 
+	font-size: 2.0em;
+    color: #34495e;
+	text-align: left;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 .care_page section p {
+	text-align: center;
 	margin-bottom: 15px;
 	font-size: 1em;
 	color: #555;
+}
+
+section#maintenance p {
+    text-align: left;
+    margin-bottom: 15px;
+    font-size: 1em;
+    color: #555;
 }
 
 /* Figure and Image Styling */
@@ -1467,7 +1483,7 @@ figcaption {
 }
 
 .care_page figure img {
-	max-width: 50%;
+	max-width: 30%;
 	height: auto;
 	display: block;
 	margin: 0 auto;
@@ -1487,15 +1503,13 @@ figcaption {
 }
 
 /* Ordered and Unordered Lists */
-.care_page ol,
-.care_page ul {
+.care_page ol, ul {
 	margin-left: 20px;
 	margin-bottom: 15px;
 }
 
-.care_page ol li,
-.care_page ul li {
-	margin-bottom: 10px;
+.care_page ol li {
+	margin-bottom: 15px;
 	font-size: 1em;
 }
 
@@ -1521,7 +1535,7 @@ figcaption {
 	background-color: #ecf0f1;
 	padding: 15px;
 	border-left: 4px solid #3498db;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 .care_page aside h3 {
@@ -1547,6 +1561,7 @@ figcaption {
 
 	.care_page section h2 {
 		font-size: 1.5em;
+        white-space: normal; 
 	}
 
 	.care_page aside h3 {
