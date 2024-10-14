@@ -13,7 +13,7 @@ p {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-ul {
+.navbar ul {
 	display: flex;
 	float: left;
 	list-style-type: none;
@@ -22,7 +22,7 @@ ul {
 	overflow: hidden;
 }
 
-ul.right-bar {
+.navbar ul.right-bar {
 	display: flex;
 	position: inherit;
 	list-style-type: none;
@@ -30,7 +30,7 @@ ul.right-bar {
 	top: 0;
 }
 
-ul img {
+.navbar ul img {
 	float: left;
 	width: 3em;
 	height: 3em;
@@ -1418,7 +1418,7 @@ h4 {
 }
 
 /* Base Typography */
-.care_page body{
+.care_background_color{
 	font-family: Arial, Helvetica, sans-serif;
 	background-color: rgb(237, 237, 224);
 }
@@ -1503,7 +1503,7 @@ figcaption {
 }
 
 /* Ordered and Unordered Lists */
-.care_page ol, ul {
+.care_page ol, .care_page ul {
 	margin-left: 20px;
 	margin-bottom: 15px;
 }
@@ -1549,7 +1549,7 @@ figcaption {
 	color: #555;
 }
 
-/* Responsive Design */
+/* Responsive Design care page */
 @media (max-width: 768px) {
 	.care_page body {
 		padding: 10px;
