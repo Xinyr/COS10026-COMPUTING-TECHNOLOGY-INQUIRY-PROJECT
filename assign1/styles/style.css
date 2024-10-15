@@ -13,29 +13,7 @@ p {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-.navbar ul {
-	display: flex;
-	float: left;
-	list-style-type: none;
-	margin: 0.1%;
-	padding: 2px;
-	overflow: hidden;
-}
 
-.navbar ul.right-bar {
-	display: flex;
-	position: inherit;
-	list-style-type: none;
-	float: right;
-	top: 0;
-}
-
-.navbar ul img {
-	float: left;
-	width: 3em;
-	height: 3em;
-	object-fit: cover;
-}
 
 .index_body::before {
 	content: "";
@@ -124,6 +102,23 @@ footer {
 
 /* navbar */
 /* the following css is derived from https://www.w3schools.com/howto/howto_css_fixed_menu.asp */
+.navbar ul {
+	display: flex;
+	float: left;
+	list-style-type: none;
+	margin: 0.1%;
+	padding: 2px;
+	overflow: hidden;
+}
+
+.navbar ul.right-bar {
+	display: flex;
+	position: inherit;
+	list-style-type: none;
+	float: right;
+	top: 0;
+}
+
 .navbar {
 	z-index: 3;
 	overflow: hidden;
@@ -143,6 +138,18 @@ footer {
 	transition: background-color 0.3s ease;
 }
 
+.navbar a:hover {
+	background-color: #1a3300;
+	color: white;
+}
+
+.navbar ul img {
+	float: left;
+	width: 3em;
+	height: 3em;
+	object-fit: cover;
+}
+
 .navbar img {
 	border-radius: 50%;
 	transition: filter 0.3s ease;
@@ -156,10 +163,6 @@ footer {
 	filter: invert(1);
 }
 
-.navbar a:hover {
-	background-color: #1a3300;
-	color: white;
-}
 
 .dropbtn { /* code from w3schools*/
 	background-color: #336600;
