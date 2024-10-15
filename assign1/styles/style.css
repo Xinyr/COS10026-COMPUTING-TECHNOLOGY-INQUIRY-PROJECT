@@ -106,6 +106,22 @@ footer {
 	margin: 20px 0 0 20px;
 }
 
+#enhancements {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#enhancements a {
+	text-decoration: none;
+	color: #d9ffb3;
+	transition: color 0.3s ease;
+}
+
+#enhancements a:hover {
+	color: #1a3300;
+}
+
 /* navbar */
 /* the following css is derived from https://www.w3schools.com/howto/howto_css_fixed_menu.asp */
 .navbar {
