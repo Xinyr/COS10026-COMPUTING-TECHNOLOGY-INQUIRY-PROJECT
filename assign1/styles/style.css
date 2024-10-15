@@ -47,6 +47,11 @@ footer {
 	align-items: center;
 }
 
+#footer_address {
+	margin: 20px 0 0 20px;
+}
+
+
 .acknowledgements div {
 	width: 100%;
 	display: flex;
@@ -80,9 +85,6 @@ footer {
 	text-align: center;
 }
 
-#footer_address {
-	margin: 20px 0 0 20px;
-}
 
 #enhancements {
 	display: flex;
