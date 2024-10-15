@@ -1906,3 +1906,16 @@ figcaption {
 	position: relative;
 	/* Keep the div content on top of the background */
 }
+.ebutton{
+	width: 100%;
+	padding: 8px;
+	background-color: #6b8f71;
+	color: white;
+	border: none;
+	border-radius: 6px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	margin-top: auto;
+	text-decoration: none;
+}
