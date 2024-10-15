@@ -705,9 +705,13 @@ iframe {
 }
 
 /* profile page cheng */
-.profile_table.cheng td {
-	background-color: #3ce0d0;
-	color: white;
+.profile_table.cheng th{
+	background-color: #45a049;
+	color: black;
+}
+.profile_table.cheng.td{
+	background-color: #fbf9e2;
+	color: black;
 }
 
 /*Forms*/
@@ -1591,11 +1595,6 @@ figcaption {
 }
 
 /* cheng */
-.profile_table.cheng td {
-	background-color: #3ce0d0;
-	color: white;
-}
-
 .tutorialH1 {
 	padding-top: 40px;
 	text-align: center;
