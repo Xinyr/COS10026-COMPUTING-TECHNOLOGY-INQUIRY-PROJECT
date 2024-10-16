@@ -587,6 +587,10 @@ iframe {
 	color: #4d3319;
 }
 
+.inner_profile_list {
+	list-style-type: none;
+}
+
 .profile_page.fred section {
 	background-color: #c2c2d6;
 }
